@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
@@ -32,39 +33,39 @@ const Navbar = () => {
       )}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <a 
-          href="#" 
+        <Link 
+          to="/" 
           className="flex items-center gap-2 text-yoga-charcoal"
         >
           <span className="text-2xl font-display font-medium">Harmony</span>
-        </a>
+        </Link>
 
         {/* Desktop navigation */}
         <nav className="hidden md:flex items-center gap-8">
-          <a 
-            href="#about" 
+          <Link 
+            to="/" 
+            className="text-yoga-charcoal hover:text-yoga-forest transition-colors duration-200 font-medium"
+          >
+            Home
+          </Link>
+          <Link 
+            to="/about" 
             className="text-yoga-charcoal hover:text-yoga-forest transition-colors duration-200 font-medium"
           >
             About
-          </a>
-          <a 
-            href="#services" 
+          </Link>
+          <Link 
+            to="/teachers-training" 
             className="text-yoga-charcoal hover:text-yoga-forest transition-colors duration-200 font-medium"
           >
-            Services
-          </a>
-          <a 
-            href="#instructors" 
+            Teachers Training
+          </Link>
+          <Link 
+            to="/postpartum-fitness" 
             className="text-yoga-charcoal hover:text-yoga-forest transition-colors duration-200 font-medium"
           >
-            Instructors
-          </a>
-          <a 
-            href="#schedule" 
-            className="text-yoga-charcoal hover:text-yoga-forest transition-colors duration-200 font-medium"
-          >
-            Schedule
-          </a>
+            Postpartum Fitness
+          </Link>
           <Button 
             className="bg-yoga-forest hover:bg-yoga-forest/90 text-white rounded-full px-6"
           >
@@ -94,34 +95,34 @@ const Navbar = () => {
         )}
       >
         <nav className="flex flex-col gap-6 items-center">
-          <a
-            href="#about"
+          <Link
+            to="/"
+            className="text-yoga-charcoal text-xl font-medium"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            Home
+          </Link>
+          <Link
+            to="/about"
             className="text-yoga-charcoal text-xl font-medium"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             About
-          </a>
-          <a
-            href="#services"
+          </Link>
+          <Link
+            to="/teachers-training"
             className="text-yoga-charcoal text-xl font-medium"
             onClick={() => setIsMobileMenuOpen(false)}
           >
-            Services
-          </a>
-          <a
-            href="#instructors"
+            Teachers Training
+          </Link>
+          <Link
+            to="/postpartum-fitness"
             className="text-yoga-charcoal text-xl font-medium"
             onClick={() => setIsMobileMenuOpen(false)}
           >
-            Instructors
-          </a>
-          <a
-            href="#schedule"
-            className="text-yoga-charcoal text-xl font-medium"
-            onClick={() => setIsMobileMenuOpen(false)}
-          >
-            Schedule
-          </a>
+            Postpartum Fitness
+          </Link>
           <Button 
             className="bg-yoga-forest hover:bg-yoga-forest/90 text-white mt-4 rounded-full px-6 w-full max-w-xs"
             onClick={() => setIsMobileMenuOpen(false)}
