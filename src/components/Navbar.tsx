@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
@@ -26,49 +25,44 @@ const Navbar = () => {
   return (
     <header
       className={cn(
-        "fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out py-4 px-6 md:px-12",
+        "fixed z-50 transition-all duration-300 ease-in-out",
         isScrolled
-          ? "bg-yoga-cream/90 backdrop-blur-md shadow-sm py-3"
-          : "bg-transparent"
+          ? "top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-7xl mx-auto rounded-full bg-yoga-cream/95 backdrop-blur-md shadow-lg py-3 px-6 md:px-8"
+          : "top-6 left-1/2 -translate-x-1/2 w-[90%] max-w-7xl mx-auto rounded-full bg-yoga-cream/80 backdrop-blur-sm shadow-md py-4 px-6 md:px-10"
       )}
     >
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <Link 
-          to="/" 
-          className="flex items-center gap-2 text-yoga-charcoal"
-        >
+      <div className="flex items-center justify-between">
+        <Link to="/" className="flex items-center gap-2 text-yoga-charcoal">
           <span className="text-2xl font-display font-medium">Harmony</span>
         </Link>
 
         {/* Desktop navigation */}
         <nav className="hidden md:flex items-center gap-8">
-          <Link 
-            to="/" 
+          <Link
+            to="/"
             className="text-yoga-charcoal hover:text-yoga-forest transition-colors duration-200 font-medium"
           >
             Home
           </Link>
-          <Link 
-            to="/about" 
+          <Link
+            to="/about"
             className="text-yoga-charcoal hover:text-yoga-forest transition-colors duration-200 font-medium"
           >
             About
           </Link>
-          <Link 
-            to="/teachers-training" 
+          <Link
+            to="/teachers-training"
             className="text-yoga-charcoal hover:text-yoga-forest transition-colors duration-200 font-medium"
           >
             Teachers Training
           </Link>
-          <Link 
-            to="/postpartum-fitness" 
+          <Link
+            to="/postpartum-fitness"
             className="text-yoga-charcoal hover:text-yoga-forest transition-colors duration-200 font-medium"
           >
             Postpartum Fitness
           </Link>
-          <Button 
-            className="bg-yoga-forest hover:bg-yoga-forest/90 text-white rounded-full px-6"
-          >
+          <Button className="bg-yoga-forest hover:bg-yoga-forest/90 text-white rounded-full px-6">
             Book a Class
           </Button>
         </nav>
@@ -123,7 +117,7 @@ const Navbar = () => {
           >
             Postpartum Fitness
           </Link>
-          <Button 
+          <Button
             className="bg-yoga-forest hover:bg-yoga-forest/90 text-white mt-4 rounded-full px-6 w-full max-w-xs"
             onClick={() => setIsMobileMenuOpen(false)}
           >
