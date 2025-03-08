@@ -36,7 +36,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "./build" # default output folder for React apps (change if different)
+          path: "./dist" # output folder for React apps built with Vite or other modern tools
 
   deploy:
     environment:
