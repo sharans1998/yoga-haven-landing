@@ -173,7 +173,7 @@ const About = () => {
               </h2>
 
               <p className="text-yoga-charcoal/80 text-lg leading-relaxed">
-                The passionate minds behind Harmony Yoga Institute, bringing
+                The passionate minds behind Yonitara Yoga Institute, bringing
                 years of combined experience and a shared vision.
               </p>
             </div>

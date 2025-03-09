@@ -29,15 +29,6 @@ const Home = () => {
       sectionObserver.observe(el);
     });
 
-    // Welcome toast notification
-    // setTimeout(() => {
-    //   toast({
-    //     title: "Welcome to Harmony Yoga",
-    //     description: "Explore our programs and find your perfect practice.",
-    //     duration: 5000,
-    //   });
-    // }, 1500);
-
     return () => {
       sectionObserver.disconnect();
     };
