@@ -71,7 +71,7 @@ const ServiceCard = ({
       </p>
 
       <Button
-        className="bg-transparent hover:bg-yoga-forest/5 text-yoga-forest hover:text-yoga-forest px-0 py-0"
+        className="bg-transparent hover:bg-yoga-deep-purple/5 text-yoga-deep-purple hover:text-yoga-deep-purple px-0 py-0"
         variant="ghost"
       >
         Learn more →
@@ -105,14 +105,14 @@ const Services = () => {
   return (
     <section
       id="services"
-      className="py-20 md:py-32 bg-gradient-to-b from-yoga-cream to-white"
+      className="py-20 md:py-32 bg-gradient-to-b from-yoga-lilac to-white"
     >
       <div className="container mx-auto px-6">
         <div
           ref={sectionRef}
           className="text-center max-w-3xl mx-auto mb-16 section-transition"
         >
-          <div className="inline-block px-4 py-1 rounded-full bg-yoga-forest/10 text-yoga-forest font-medium text-sm mb-6">
+          <div className="inline-block px-4 py-1 rounded-full bg-yoga-deep-purple/10 text-yoga-deep-purple font-medium text-sm mb-6">
             Our Offerings
           </div>
 
@@ -133,7 +133,7 @@ const Services = () => {
             description="A specialized training blending Eastern wisdom with Western science to support mothers beyond yoga."
             icon={FileBadge2}
             delay={1}
-            colorClass="bg-yoga-clay/80"
+            colorClass="bg-yoga-deep-purple"
           />
 
           <ServiceCard
@@ -141,7 +141,7 @@ const Services = () => {
             description="Holistic classes designed to nurture women’s health, from menstrual health to menopause."
             icon={CalendarClock}
             delay={2}
-            colorClass="bg-yoga-forest"
+            colorClass="bg-yoga-deep-purple/80"
           />
 
           <ServiceCard
@@ -149,7 +149,7 @@ const Services = () => {
             description="Personalized support for fertility, pregnancy, and postnatal recovery through yoga, Ayurveda, and therapeutic practices."
             icon={Speech}
             delay={3}
-            colorClass="bg-yoga-sage"
+            colorClass="bg-yoga-deep-purple/60"
           />
         </div>
       </div>

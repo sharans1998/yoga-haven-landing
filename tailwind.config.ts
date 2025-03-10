@@ -36,6 +36,17 @@ export default {
 					'forest': '#6F7B63',
 					'clay': '#9D8E7E',
 					'charcoal': '#3A3A3A',
+
+
+
+
+
+					'purple': '#9738c6',     // Your logo color
+					'lavender': '#d4b6e5',   // Lighter shade of purple
+					'lilac': '#f2ebf7',      // Very light purple for backgrounds
+					'deep-purple': '#6a2590', // Darker purple for accents
+					'mist': '#e6e6e9',       // Light gray for neutral elements
+					'mint': '#c5e8d2',       // Complementary accent color (green)
 				},
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
@@ -123,11 +134,11 @@ export default {
 					'100%': { transform: 'scale(0.95)', opacity: '0' }
 				},
 				'image-fade-in': {
-					'0%': { 
+					'0%': {
 						opacity: '0',
 						filter: 'blur(10px)'
 					},
-					'100%': { 
+					'100%': {
 						opacity: '1',
 						filter: 'blur(0)'
 					}

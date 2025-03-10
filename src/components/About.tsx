@@ -27,7 +27,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="py-20 md:py-32 bg-yoga-cream overflow-hidden"
+      className="py-20 md:py-32 bg-yoga-lilac overflow-hidden"
     >
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -71,7 +71,7 @@ const About = () => {
             ref={sectionRef}
             className="order-1 lg:order-2 section-transition"
           >
-            <div className="inline-block px-4 py-1 rounded-full bg-yoga-forest/10 text-yoga-forest font-medium text-sm mb-6">
+            <div className="inline-block px-4 py-1 rounded-full bg-yoga-deep-purple/10 text-yoga-deep-purple font-medium text-sm mb-6">
               Our Story
             </div>
 

@@ -27,8 +27,8 @@ const Navbar = () => {
       className={cn(
         "fixed z-50 transition-all duration-300 ease-in-out",
         isScrolled
-          ? "top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-7xl mx-auto rounded-full bg-yoga-cream/95 backdrop-blur-md shadow-lg py-3 px-6 md:px-8"
-          : "top-6 left-1/2 -translate-x-1/2 w-[90%] max-w-7xl mx-auto rounded-full bg-yoga-cream/80 backdrop-blur-sm shadow-md py-4 px-6 md:px-10"
+          ? "top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-7xl mx-auto rounded-full bg-yoga-lilac/95 backdrop-blur-md shadow-lg py-3 px-6 md:px-8"
+          : "top-6 left-1/2 -translate-x-1/2 w-[90%] max-w-7xl mx-auto rounded-full bg-yoga-lilac/80 backdrop-blur-sm shadow-md py-4 px-6 md:px-10"
       )}
     >
       <div className="flex items-center justify-between">
@@ -40,29 +40,29 @@ const Navbar = () => {
         <nav className="hidden md:flex items-center gap-8">
           <Link
             to="/"
-            className="text-yoga-charcoal hover:text-yoga-forest transition-colors duration-200 font-medium"
+            className="text-yoga-charcoal hover:text-yoga-deep-purple transition-colors duration-200 font-medium"
           >
             Home
           </Link>
           <Link
             to="/about"
-            className="text-yoga-charcoal hover:text-yoga-forest transition-colors duration-200 font-medium"
+            className="text-yoga-charcoal hover:text-yoga-deep-purple transition-colors duration-200 font-medium"
           >
             About
           </Link>
           <Link
             to="/teachers-training"
-            className="text-yoga-charcoal hover:text-yoga-forest transition-colors duration-200 font-medium"
+            className="text-yoga-charcoal hover:text-yoga-deep-purple transition-colors duration-200 font-medium"
           >
             Teachers Training
           </Link>
           <Link
             to="/postpartum-fitness"
-            className="text-yoga-charcoal hover:text-yoga-forest transition-colors duration-200 font-medium"
+            className="text-yoga-charcoal hover:text-yoga-deep-purple transition-colors duration-200 font-medium"
           >
             Postpartum Fitness
           </Link>
-          <Button className="bg-yoga-forest hover:bg-yoga-forest/90 text-white rounded-full px-6">
+          <Button className="bg-yoga-deep-purple hover:bg-yoga-deep-purple/90 text-white rounded-full px-6">
             Book a Class
           </Button>
         </nav>
@@ -84,7 +84,7 @@ const Navbar = () => {
       {/* Mobile menu */}
       <div
         className={cn(
-          "fixed inset-0 bg-yoga-cream flex flex-col pt-24 px-6 md:hidden z-40 transition-transform duration-300 ease-in-out",
+          "fixed inset-0 bg-yoga-lilac flex flex-col pt-24 px-6 md:hidden z-40 transition-transform duration-300 ease-in-out",
           isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
         )}
       >
@@ -118,7 +118,7 @@ const Navbar = () => {
             Postpartum Fitness
           </Link>
           <Button
-            className="bg-yoga-forest hover:bg-yoga-forest/90 text-white mt-4 rounded-full px-6 w-full max-w-xs"
+            className="bg-yoga-deep-purple hover:bg-yoga-deep-purple/90 text-white mt-4 rounded-full px-6 w-full max-w-xs"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Book a Class

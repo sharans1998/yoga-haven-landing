@@ -24,11 +24,11 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen overflow-hidden pt-20">
       {/* Background gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-yoga-cream/80 via-transparent to-yoga-cream z-10"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-yoga-lilac/80 via-transparent to-yoga-lilac z-10"></div>
 
       {/* Background image with parallax effect */}
       <div ref={imageRef} className="absolute inset-0 -z-10">
-        <div className="absolute inset-0 bg-yoga-cream/30 backdrop-blur-[2px]"></div>
+        <div className="absolute inset-0 bg-yoga-lilac/30 backdrop-blur-[2px]"></div>
         <div
           className="w-full h-full bg-center bg-cover animate-image-pan"
           style={{
@@ -41,15 +41,17 @@ const Hero = () => {
 
       <div className="container mx-auto px-6 pt-32 pb-20 md:pt-40 md:pb-32 relative z-20">
         <div className="max-w-3xl mx-auto text-center" ref={textRef}>
-          <div className="bg-yoga-cream/30 backdrop-blur-sm p-1 md:p-2 rounded-full inline-block mb-6 animate-fade-in">
-            <span className="text-yoga-forest font-medium px-4 py-1 text-sm md:text-base">
+          <div className="bg-yoga-lilac/30 backdrop-blur-sm p-1 md:p-2 rounded-full inline-block mb-6 animate-fade-in">
+            <span className="text-yoga-deep-purple font-medium px-4 py-1 text-sm md:text-base">
               Yonitara Birth
             </span>
           </div>
 
           <h1 className="text-5xl md:text-7xl font-display font-medium mb-6 text-yoga-charcoal leading-tight animate-slide-down">
             Empowering with &nbsp;
-            <span className="italic text-yoga-forest">Informed Choices</span>
+            <span className="italic text-yoga-deep-purple">
+              Informed Choices
+            </span>
           </h1>
 
           <p className="text-lg md:text-xl text-yoga-charcoal/80 mb-10 max-w-2xl mx-auto leading-relaxed animate-fade-in">
@@ -61,7 +63,7 @@ const Hero = () => {
             <Button
               className={cn(
                 "rounded-full text-white font-medium px-6 py-6",
-                "bg-yoga-forest hover:bg-yoga-forest/90 transition-all",
+                "bg-yoga-deep-purple hover:bg-yoga-deep-purple/90 transition-all",
                 "text-base"
               )}
               role="link"
@@ -72,8 +74,8 @@ const Hero = () => {
             <Button
               variant="outline"
               className={cn(
-                "rounded-full border-yoga-forest text-yoga-forest",
-                "hover:bg-yoga-forest/5 hover:text-yoga-forest",
+                "rounded-full border-yoga-deep-purple text-yoga-deep-purple",
+                "hover:bg-yoga-deep-purple/5 hover:text-yoga-deep-purple",
                 "font-medium px-6 py-6 text-base"
               )}
             >

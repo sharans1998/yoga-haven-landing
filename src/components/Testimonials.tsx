@@ -74,13 +74,13 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <section className="py-20 md:py-32 bg-yoga-forest/5 overflow-hidden">
+    <section className="py-20 md:py-32 bg-yoga-deep-purple/5 overflow-hidden">
       <div className="container mx-auto px-6">
         <div
           ref={sectionRef}
           className="section-transition text-center max-w-3xl mx-auto mb-16"
         >
-          <div className="inline-block px-4 py-1 rounded-full bg-yoga-forest/10 text-yoga-forest font-medium text-sm mb-6">
+          <div className="inline-block px-4 py-1 rounded-full bg-yoga-deep-purple/10 text-yoga-deep-purple font-medium text-sm mb-6">
             Testimonials
           </div>
 
@@ -95,7 +95,7 @@ const Testimonials = () => {
 
           {/* Testimonial Cards */}
           <div className="relative overflow-hidden rounded-3xl bg-white p-8 md:p-12 shadow-sm border border-yoga-sand">
-            <Quote className="text-yoga-forest/20 w-16 h-16 absolute top-6 right-6" />
+            <Quote className="text-yoga-deep-purple/20 w-16 h-16 absolute top-6 right-6" />
 
             <div className="relative z-10">
               {testimonials.map((testimonial, index) => (
@@ -167,7 +167,7 @@ const Testimonials = () => {
                   className={cn(
                     "w-2 h-2 rounded-full transition-all duration-300",
                     index === activeIndex
-                      ? "bg-yoga-forest w-6"
+                      ? "bg-yoga-deep-purple w-6"
                       : "bg-yoga-sand hover:bg-yoga-sand/80"
                   )}
                   aria-label={`Go to testimonial ${index + 1}`}

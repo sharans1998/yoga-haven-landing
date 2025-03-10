@@ -35,7 +35,7 @@ const Home = () => {
   }, [toast]);
 
   return (
-    <div className="min-h-screen bg-yoga-cream">
+    <div className="min-h-screen bg-yoga-lilac">
       <Navbar />
       <main>
         <Hero />
@@ -44,7 +44,7 @@ const Home = () => {
         <section className="py-16 md:py-24 bg-white">
           <div className="container mx-auto px-6">
             <div className="max-w-3xl mx-auto text-center section-transition">
-              <div className="inline-block px-4 py-1 rounded-full bg-yoga-forest/10 text-yoga-forest font-medium text-sm mb-6">
+              <div className="inline-block px-4 py-1 rounded-full bg-yoga-deep-purple/10 text-yoga-deep-purple font-medium text-sm mb-6">
                 About Yonitara Birth
               </div>
 

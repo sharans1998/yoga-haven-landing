@@ -34,7 +34,7 @@ const About = () => {
   }, [toast]);
 
   return (
-    <div className="min-h-screen bg-yoga-cream">
+    <div className="min-h-screen bg-yoga-lilac">
       <Navbar />
       <main>
         {/* Full Screen Banner Section */}
@@ -54,7 +54,7 @@ const About = () => {
 
           <div className="absolute inset-0 flex items-center justify-center px-6">
             <div className="max-w-3xl mx-auto text-center">
-              <div className="bg-yoga-cream/10 backdrop-blur-sm p-1 md:p-2 rounded-full inline-block mb-6 animate-fade-in">
+              <div className="bg-yoga-lilac/10 backdrop-blur-sm p-1 md:p-2 rounded-full inline-block mb-6 animate-fade-in">
                 <span className="text-white font-medium px-4 py-1 text-sm md:text-base">
                   Our Story
                 </span>
@@ -70,7 +70,7 @@ const About = () => {
 
               <Button
                 className="rounded-full text-yoga-charcoal font-medium px-6 py-6 
-                bg-yoga-cream hover:bg-yoga-cream/90 transition-all text-base animate-fade-in"
+                bg-yoga-lilac hover:bg-yoga-lilac/90 transition-all text-base animate-fade-in"
                 onClick={() => {
                   // scroll to the mission section
                   const missionSection =
@@ -113,7 +113,7 @@ const About = () => {
           <div className="container mx-auto px-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center h-full">
               <div className="section-transition h-full">
-                <div className="inline-block px-4 py-1 rounded-full bg-yoga-forest/10 text-yoga-forest font-medium text-sm mb-6">
+                <div className="inline-block px-4 py-1 rounded-full bg-yoga-deep-purple/10 text-yoga-deep-purple font-medium text-sm mb-6">
                   Our Mission
                 </div>
 
@@ -135,7 +135,7 @@ const About = () => {
               </div>
 
               <div className="section-transition h-full">
-                <div className="inline-block px-4 py-1 rounded-full bg-yoga-forest/10 text-yoga-forest font-medium text-sm mb-6">
+                <div className="inline-block px-4 py-1 rounded-full bg-yoga-deep-purple/10 text-yoga-deep-purple font-medium text-sm mb-6">
                   Our Vision
                 </div>
 
@@ -161,10 +161,10 @@ const About = () => {
         </section>
 
         {/* Founders Section */}
-        <section className="py-16 md:py-24 bg-yoga-cream">
+        <section className="py-16 md:py-24 bg-yoga-lilac">
           <div className="container mx-auto px-6">
             <div className="text-center max-w-3xl mx-auto mb-16 section-transition">
-              <div className="inline-block px-4 py-1 rounded-full bg-yoga-forest/10 text-yoga-forest font-medium text-sm mb-6">
+              <div className="inline-block px-4 py-1 rounded-full bg-yoga-deep-purple/10 text-yoga-deep-purple font-medium text-sm mb-6">
                 Our Team
               </div>
 
@@ -191,7 +191,7 @@ const About = () => {
                   <h3 className="text-2xl font-display font-medium text-yoga-charcoal mb-2">
                     Shruthi Jain
                   </h3>
-                  <p className="text-yoga-forest mb-4">
+                  <p className="text-yoga-deep-purple mb-4">
                     Pre & Postnatal Yoga Expert
                   </p>
                   <p className="text-yoga-charcoal/70 mb-6 leading-relaxed">
@@ -210,7 +210,7 @@ const About = () => {
                   <div className="gap-4 hidden">
                     <Button
                       variant="outline"
-                      className="border-yoga-forest text-yoga-forest hover:bg-yoga-forest/5 rounded-full px-6"
+                      className="border-yoga-deep-purple text-yoga-deep-purple hover:bg-yoga-deep-purple/5 rounded-full px-6"
                     >
                       Read More
                     </Button>
@@ -230,7 +230,9 @@ const About = () => {
                   <h3 className="text-2xl font-display font-medium text-yoga-charcoal mb-2">
                     Pankhuree
                   </h3>
-                  <p className="text-yoga-forest mb-4">Yoga & Fitness Coach</p>
+                  <p className="text-yoga-deep-purple mb-4">
+                    Yoga & Fitness Coach
+                  </p>
                   <p className="text-yoga-charcoal/70 mb-6 leading-relaxed">
                     A passionate yoga and fitness coach, Pankhuree specializes
                     in pre and postnatal yoga. Certified in craniosacral
@@ -246,7 +248,7 @@ const About = () => {
                   <div className="gap-4 hidden">
                     <Button
                       variant="outline"
-                      className="border-yoga-forest text-yoga-forest hover:bg-yoga-forest/5 rounded-full px-6"
+                      className="border-yoga-deep-purple text-yoga-deep-purple hover:bg-yoga-deep-purple/5 rounded-full px-6"
                     >
                       Read More
                     </Button>
