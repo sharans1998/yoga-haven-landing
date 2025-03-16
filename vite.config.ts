@@ -19,5 +19,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: "/yoga-haven-landing/"
+  base: process.env.NODE_ENV === 'production' ? '/yoga-haven-landing/' : '/'
 }));
