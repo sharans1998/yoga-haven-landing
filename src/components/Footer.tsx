@@ -151,14 +151,16 @@ const Footer = () => {
               Contact Us
             </h4>
             <ul className="space-y-4">
-              <li className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-yoga-deep-purple" />
-                <span className="text-yoga-charcoal/70">Call us</span>
+              <li>
+                <a className="flex items-center gap-3" href="tel:+919108700146">
+                  <Phone className="w-5 h-5 text-yoga-deep-purple" />
+                  <span className="text-yoga-charcoal/70">Call us</span>
+                </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-yoga-deep-purple" />
                 <a
-                  href="mailto:shruthi.cjain@gmail.com"
+                  href="mailto:yonitara.birth@gmail.com"
                   className="text-yoga-charcoal/70 hover:text-yoga-deep-purple transition-colors"
                 >
                   Write to us
