@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import CTA from "@/components/CTA";
 import { useToast } from "@/hooks/use-toast";
-import { CheckCircle2 } from "lucide-react";
+import { CheckCircle2, Baby } from "lucide-react";
 
 const TeachersTraining = () => {
   const { toast } = useToast();
@@ -60,18 +60,20 @@ const TeachersTraining = () => {
             <div className="max-w-3xl mx-auto text-center">
               <div className="bg-yoga-lilac/30 backdrop-blur-sm p-1 md:p-2 rounded-full inline-block mb-6 animate-fade-in">
                 <span className="text-yoga-deep-purple font-medium px-4 py-1 text-sm md:text-base">
-                  200 & 300-Hour Programs
+                  Pre & Postnatal
                 </span>
               </div>
 
               <h1 className="text-5xl md:text-7xl font-display font-medium mb-6 text-yoga-charcoal leading-tight animate-slide-down">
-                Teacher{" "}
-                <span className="italic text-yoga-deep-purple">Training</span>
+                Teachers{" "}
+                <span className="italic text-yoga-deep-purple">
+                  Training Certification
+                </span>
               </h1>
 
               <p className="text-lg md:text-xl text-yoga-charcoal/80 mb-10 max-w-2xl mx-auto leading-relaxed animate-fade-in">
-                Transform your practice and discover the teacher within through
-                our comprehensive, Yoga Alliance certified training programs.
+                Become an expert in prenatal & postnatal yoga, childbirth
+                education, Ayurveda, and Garbha Sanskar in just 8 weeks!
               </p>
 
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-slide-up">
@@ -104,10 +106,11 @@ const TeachersTraining = () => {
                 </h2>
 
                 <p className="text-yoga-charcoal/80 text-lg mb-6 leading-relaxed">
-                  Our teacher training program is more than just learning to
-                  teach yoga—it's a profound journey of personal growth,
-                  deepening your understanding of yoga philosophy, anatomy, and
-                  teaching methodology.
+                  A comprehensive training for yoga instructors looking to
+                  specialize in pre & postnatal health. This evidence-based
+                  certification merges Eastern and Western knowledge to equip
+                  you with the skills needed to support pregnant and postpartum
+                  mothers.
                 </p>
 
                 <p className="text-yoga-charcoal/80 text-lg mb-8 leading-relaxed">
@@ -155,7 +158,7 @@ const TeachersTraining = () => {
                 </div>
               </div>
 
-              <div className="relative h-[500px] md:h-[600px] section-transition">
+              <div className="relative h-[500px] md:h-[600px] section-transition bg-indigo-300">
                 <div className="absolute w-3/4 h-3/4 top-0 left-0 z-10 image-reveal image-reveal-delay-1">
                   <div className="w-full h-full overflow-hidden rounded-2xl">
                     <img
@@ -221,73 +224,60 @@ const TeachersTraining = () => {
                 </div>
 
                 <h3 className="text-2xl font-display font-medium text-yoga-charcoal mb-4">
-                  Philosophy & History
+                  Prenatal
                 </h3>
 
                 <ul className="space-y-3 text-yoga-charcoal/70 mb-6">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="text-yoga-deep-purple h-5 w-5 mt-0.5 flex-shrink-0" />
-                    <span>Yoga sutras and ancient texts</span>
+                    <span>Safe asana modifications</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="text-yoga-deep-purple h-5 w-5 mt-0.5 flex-shrink-0" />
-                    <span>Eight limbs of yoga</span>
+                    <span>Trimester-specific practices</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="text-yoga-deep-purple h-5 w-5 mt-0.5 flex-shrink-0" />
-                    <span>History of yoga traditions</span>
+                    <span>Pregnancy anatomy essentials</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="text-yoga-deep-purple h-5 w-5 mt-0.5 flex-shrink-0" />
-                    <span>Yogic lifestyle and ethics</span>
+                    <span>Breathing techniques for pregnancy</span>
                   </li>
                 </ul>
               </div>
 
               <div className="bg-white rounded-3xl p-8 shadow-sm border border-yoga-sand transition-all duration-300 hover:shadow-md hover:translate-y-[-5px] section-transition">
-                <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 bg-yoga-clay/80">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-8 h-8 text-white"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
+                <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 bg-yoga-deep-purple/80">
+                  <Baby className="text-white h-8 w-8" />
                 </div>
 
                 <h3 className="text-2xl font-display font-medium text-yoga-charcoal mb-4">
-                  Teaching Methodology
+                  Childbirth
                 </h3>
 
                 <ul className="space-y-3 text-yoga-charcoal/70 mb-6">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="text-yoga-deep-purple h-5 w-5 mt-0.5 flex-shrink-0" />
-                    <span>Class sequencing and planning</span>
+                    <span>Labor preparation techniques</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="text-yoga-deep-purple h-5 w-5 mt-0.5 flex-shrink-0" />
-                    <span>Clear instruction techniques</span>
+                    <span>Birthing positions and movements</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="text-yoga-deep-purple h-5 w-5 mt-0.5 flex-shrink-0" />
-                    <span>Hands-on adjustments</span>
+                    <span>Pain management strategies</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="text-yoga-deep-purple h-5 w-5 mt-0.5 flex-shrink-0" />
-                    <span>Creating safe, inclusive classes</span>
+                    <span>Partner support methods</span>
                   </li>
                 </ul>
               </div>
 
               <div className="bg-white rounded-3xl p-8 shadow-sm border border-yoga-sand transition-all duration-300 hover:shadow-md hover:translate-y-[-5px] section-transition">
-                <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 bg-yoga-sage">
+                <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 bg-yoga-deep-purple/60">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="w-8 h-8 text-white"
@@ -305,25 +295,24 @@ const TeachersTraining = () => {
                 </div>
 
                 <h3 className="text-2xl font-display font-medium text-yoga-charcoal mb-4">
-                  Anatomy & Physiology
+                  Postnatal Care
                 </h3>
-
                 <ul className="space-y-3 text-yoga-charcoal/70 mb-6">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="text-yoga-deep-purple h-5 w-5 mt-0.5 flex-shrink-0" />
-                    <span>Functional anatomy for yoga</span>
+                    <span>Postpartum recovery techniques</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="text-yoga-deep-purple h-5 w-5 mt-0.5 flex-shrink-0" />
-                    <span>Biomechanics of asanas</span>
+                    <span>Mother-baby bonding practices</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="text-yoga-deep-purple h-5 w-5 mt-0.5 flex-shrink-0" />
-                    <span>Common injuries and modifications</span>
+                    <span>Core restoration exercises</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="text-yoga-deep-purple h-5 w-5 mt-0.5 flex-shrink-0" />
-                    <span>Subtle body energetics</span>
+                    <span>Healing through gentle movement</span>
                   </li>
                 </ul>
               </div>
