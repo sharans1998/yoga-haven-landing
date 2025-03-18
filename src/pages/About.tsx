@@ -118,8 +118,7 @@ const About = () => {
                 </div>
 
                 <h2 className="text-3xl md:text-4xl font-display font-medium text-yoga-charcoal mb-6 leading-tight">
-                  To Create <span className="italic">Balance</span> In Every
-                  Life
+                  Empower Women with <span className="italic">Information</span>
                 </h2>
 
                 <p className="text-yoga-charcoal/80 text-lg mb-6 leading-relaxed">
@@ -161,7 +160,7 @@ const About = () => {
         </section>
 
         {/* Founders Section */}
-        <section className="py-16 md:py-24 bg-yoga-lilac">
+        <section className="py-16 md:py-24 bg-gradient-to-b from-yoga-lilac to-white">
           <div className="container mx-auto px-6">
             <div className="text-center max-w-3xl mx-auto mb-16 section-transition">
               <div className="inline-block px-4 py-1 rounded-full bg-yoga-deep-purple/10 text-yoga-deep-purple font-medium text-sm mb-6">

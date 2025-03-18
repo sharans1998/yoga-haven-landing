@@ -21,7 +21,7 @@ const PostpartumFitness = () => {
 
   useEffect(() => {
     // Scroll to top when component mounts
-    // window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
 
     // Add smooth appearing animation to elements with section-transition class
     const sectionObserver = new IntersectionObserver(
@@ -195,7 +195,7 @@ const PostpartumFitness = () => {
         </section>
 
         {/* Why Join Section */}
-        <section className="py-16 md:py-24 bg-yoga-lilac">
+        <section className="py-16 md:py-24 bg-gradient-to-b from-yoga-lilac to-white">
           <div className="container mx-auto px-6">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="relative h-[500px] order-2 lg:order-1 section-transition bg-indigo-300">
@@ -222,7 +222,7 @@ const PostpartumFitness = () => {
                 </div>
               </div>
 
-              <div className="order-1 lg:order-2 section-transition">
+              <div className="order-1 lg:order-2 section-transition ">
                 <div className="inline-block px-4 py-1 rounded-full bg-yoga-deep-purple/10 text-yoga-deep-purple font-medium text-sm mb-6">
                   Why Join Our Program
                 </div>

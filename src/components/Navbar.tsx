@@ -9,9 +9,19 @@ const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
+    let lastScrollY = window.scrollY;
+
     const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      setIsScrolled(scrollPosition > 10);
+      const currentScrollY = window.scrollY;
+      const scrollDirection = currentScrollY > lastScrollY ? "down" : "up";
+
+      if (scrollDirection === "down") {
+        setIsScrolled(currentScrollY > 10);
+      } else {
+        setIsScrolled(false);
+      }
+
+      lastScrollY = currentScrollY;
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -27,7 +37,7 @@ const Navbar = () => {
       className={cn(
         "fixed z-50 transition-all duration-300 ease-in-out",
         isScrolled
-          ? "top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-7xl mx-auto rounded-full bg-yoga-lilac/95 backdrop-blur-md shadow-lg py-3 px-6 md:px-8"
+          ? "-top-52 left-1/2 -translate-x-1/2 w-[90%] max-w-7xl mx-auto rounded-full bg-yoga-lilac/95 backdrop-blur-md shadow-lg py-3 px-6 md:px-8"
           : "top-6 left-1/2 -translate-x-1/2 w-[90%] max-w-7xl mx-auto rounded-full bg-yoga-lilac/80 backdrop-blur-sm shadow-md py-4 px-6 md:px-10"
       )}
     >
