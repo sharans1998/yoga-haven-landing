@@ -4,14 +4,24 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import CTA from "@/components/CTA";
 import { useToast } from "@/hooks/use-toast";
-import { Heart, ShieldCheck, Users } from "lucide-react";
+import {
+  CheckCircle2,
+  Heart,
+  LocateFixed,
+  PersonStanding,
+  ShieldCheck,
+  Speech,
+  Timer,
+  Users,
+  Waves,
+} from "lucide-react";
 
 const PostpartumFitness = () => {
   const { toast } = useToast();
 
   useEffect(() => {
     // Scroll to top when component mounts
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
 
     // Add smooth appearing animation to elements with section-transition class
     const sectionObserver = new IntersectionObserver(
@@ -60,18 +70,18 @@ const PostpartumFitness = () => {
             <div className="max-w-3xl mx-auto text-center">
               <div className="bg-yoga-lilac/30 backdrop-blur-sm p-1 md:p-2 rounded-full inline-block mb-6 animate-fade-in">
                 <span className="text-yoga-deep-purple font-medium px-4 py-1 text-sm md:text-base">
-                  Specialized Program
+                  Supporting Your Recovery After Childbirth
                 </span>
               </div>
 
               <h1 className="text-5xl md:text-7xl font-display font-medium mb-6 text-yoga-charcoal leading-tight animate-slide-down">
-                Postpartum{" "}
-                <span className="italic text-yoga-deep-purple">Fitness</span>
+                <span className="italic text-yoga-deep-purple">Postnatal</span>{" "}
+                Rehab Program
               </h1>
 
               <p className="text-lg md:text-xl text-yoga-charcoal/80 mb-10 max-w-2xl mx-auto leading-relaxed animate-fade-in">
-                Rebuild strength, find community, and nurture yourself through
-                our specialized postpartum yoga and fitness program.
+                A structured, holistic approach to postpartum healing, strength
+                building, and emotional well-being.
               </p>
 
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-slide-up">
@@ -92,88 +102,93 @@ const PostpartumFitness = () => {
         {/* Program Highlights */}
         <section className="py-16 md:py-24 bg-white">
           <div className="container mx-auto px-6">
-            <div className="text-center max-w-3xl mx-auto mb-16 section-transition">
-              <div className="inline-block px-4 py-1 rounded-full bg-yoga-deep-purple/10 text-yoga-deep-purple font-medium text-sm mb-6">
-                Program Highlights
-              </div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div className="section-transition">
+                <div className="inline-block px-4 py-1 rounded-full bg-yoga-deep-purple/10 text-yoga-deep-purple font-medium text-sm mb-6">
+                  Program Overview
+                </div>
 
-              <h2 className="text-4xl md:text-5xl font-display text-yoga-charcoal mb-6">
-                Your Journey to <span className="italic">Strength</span>
-              </h2>
+                <h2 className="text-3xl md:text-4xl font-display font-medium text-yoga-charcoal mb-6 leading-tight">
+                  Help your body <span className="italic">Heal</span> and Thrive
+                </h2>
 
-              <p className="text-yoga-charcoal/80 text-lg leading-relaxed">
-                Our postpartum program is thoughtfully designed to support new
-                mothers through every step of recovery and rebuilding.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="bg-white rounded-3xl p-8 shadow-sm border border-yoga-sand transition-all duration-300 hover:shadow-md hover:translate-y-[-5px] section-transition">
-                <img
-                  src="https://images.unsplash.com/photo-1608404862898-ca7de5c2eb4a?q=80&w=1000&auto=format"
-                  alt="Mother and baby in yoga class"
-                  className="w-full h-64 object-cover rounded-2xl mb-6"
-                />
-
-                <h3 className="text-2xl font-display font-medium text-yoga-charcoal mb-4">
-                  Baby-Friendly Classes
-                </h3>
-
-                <p className="text-yoga-charcoal/70 mb-6 leading-relaxed">
-                  Bring your little one along to our specialized classes
-                  designed for mothers with babies. Our nurturing environment
-                  welcomes both you and your child, allowing you to practice
-                  without worrying about childcare.
+                <p className="text-yoga-charcoal/80 text-lg mb-6 leading-relaxed">
+                  Our Postnatal Yoga & Fitness Program is designed to help
+                  mothers recover physically & emotionally after childbirth. We
+                  go beyond traditional workouts, combining yoga, strength
+                  training, Pilates, endurance training, and mindfulness for a
+                  safe and effective recovery plan.
                 </p>
 
-                <ul className="space-y-2 text-yoga-charcoal/70 mb-6">
-                  <li className="flex items-start gap-2">
-                    <ShieldCheck className="text-yoga-deep-purple h-5 w-5 mt-0.5 flex-shrink-0" />
-                    <span>Safe environment for babies up to crawling age</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <ShieldCheck className="text-yoga-deep-purple h-5 w-5 mt-0.5 flex-shrink-0" />
-                    <span>Feeding and changing stations available</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <ShieldCheck className="text-yoga-deep-purple h-5 w-5 mt-0.5 flex-shrink-0" />
-                    <span>Supportive community of new parents</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="bg-white rounded-3xl p-8 shadow-sm border border-yoga-sand transition-all duration-300 hover:shadow-md hover:translate-y-[-5px] section-transition">
-                <img
-                  src="https://images.unsplash.com/photo-1596870230751-ebdfce98ec42?q=80&w=1000&auto=format"
-                  alt="Postpartum yoga class"
-                  className="w-full h-64 object-cover rounded-2xl mb-6"
-                />
-
-                <h3 className="text-2xl font-display font-medium text-yoga-charcoal mb-4">
-                  Core & Pelvic Floor Recovery
-                </h3>
-
-                <p className="text-yoga-charcoal/70 mb-6 leading-relaxed">
-                  Our specialized sequences focus on safely rebuilding core
-                  strength and restoring pelvic floor function—essential
-                  elements of postpartum recovery often overlooked in general
-                  fitness programs.
+                <p className="text-yoga-charcoal/80 text-lg mb-8 leading-relaxed">
+                  Led by experienced instructors with decades of combined
+                  teaching experience, our program blends traditional yogic
+                  wisdom with modern teaching approaches.
                 </p>
 
-                <ul className="space-y-2 text-yoga-charcoal/70 mb-6">
-                  <li className="flex items-start gap-2">
-                    <ShieldCheck className="text-yoga-deep-purple h-5 w-5 mt-0.5 flex-shrink-0" />
-                    <span>Diastasis recti-aware exercises</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <ShieldCheck className="text-yoga-deep-purple h-5 w-5 mt-0.5 flex-shrink-0" />
-                    <span>Progressive strength building approach</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <ShieldCheck className="text-yoga-deep-purple h-5 w-5 mt-0.5 flex-shrink-0" />
-                    <span>Modifications for all recovery stages</span>
-                  </li>
-                </ul>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <CheckCircle2 className="text-yoga-deep-purple mt-1 h-5 w-5 flex-shrink-0" />
+                    <div>
+                      <h3 className="font-medium text-yoga-charcoal">
+                        Core & Pelvic Floor Strengthening
+                      </h3>
+                      <p className="text-yoga-charcoal/70">
+                        Regain strength and stability to heal from diastasis
+                        recti, back pain, and weakened muscles
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-3">
+                    <CheckCircle2 className="text-yoga-deep-purple mt-1 h-5 w-5 flex-shrink-0" />
+                    <div>
+                      <h3 className="font-medium text-yoga-charcoal">
+                        Postnatal Healing
+                      </h3>
+                      <p className="text-yoga-charcoal/70">
+                        Gentle yoga, breathwork, and therapeutic exercises to
+                        restore balance and energy.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-3">
+                    <CheckCircle2 className="text-yoga-deep-purple mt-1 h-5 w-5 flex-shrink-0" />
+                    <div>
+                      <h3 className="font-medium text-yoga-charcoal">
+                        Emotional Well-Being
+                      </h3>
+                      <p className="text-yoga-charcoal/70">
+                        Mindfulness practices to manage postpartum anxiety,
+                        depression, and stress.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="relative h-[500px] md:h-[600px] section-transition bg-indigo-300">
+                <div className="absolute w-3/4 h-3/4 top-0 left-0 z-10 image-reveal image-reveal-delay-1">
+                  <div className="w-full h-full overflow-hidden rounded-2xl">
+                    <img
+                      src="https://images.unsplash.com/photo-1599447292461-74fb7d5a541a?q=80&w=1200&auto=format"
+                      alt="Yoga teacher training session"
+                      className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                    />
+                  </div>
+                  <div className="absolute -bottom-4 -right-4 w-24 h-24 md:w-32 md:h-32 bg-yoga-sage rounded-2xl -z-10"></div>
+                </div>
+                <div className="absolute w-2/3 h-2/3 bottom-0 right-0 image-reveal image-reveal-delay-2">
+                  <div className="w-full h-full overflow-hidden rounded-2xl">
+                    <img
+                      src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1200&auto=format"
+                      alt="Yoga teacher training workshop"
+                      className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                    />
+                  </div>
+                  <div className="absolute -top-4 -left-4 w-24 h-24 md:w-32 md:h-32 bg-yoga-clay/50 rounded-2xl -z-10"></div>
+                </div>
               </div>
             </div>
           </div>
@@ -183,13 +198,13 @@ const PostpartumFitness = () => {
         <section className="py-16 md:py-24 bg-yoga-lilac">
           <div className="container mx-auto px-6">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div className="relative h-[500px] order-2 lg:order-1 section-transition">
+              <div className="relative h-[500px] order-2 lg:order-1 section-transition bg-indigo-300">
                 <div className="absolute w-3/4 h-3/4 top-0 left-0 z-10 image-reveal image-reveal-delay-1">
                   <div className="w-full h-full overflow-hidden rounded-2xl">
                     <img
                       src="https://images.unsplash.com/photo-1607247098789-dafd523388e4?q=80&w=1200&auto=format"
                       alt="Mother with baby in yoga class"
-                      className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                      className="w-full h-full object-cover transition-transform duration-700 hover:scale-105 bg-indigo-300"
                     />
                   </div>
                   <div className="absolute -bottom-4 -right-4 w-24 h-24 md:w-32 md:h-32 bg-yoga-sage rounded-2xl -z-10"></div>
@@ -226,52 +241,81 @@ const PostpartumFitness = () => {
 
                 <div className="space-y-6 mb-8">
                   <div className="flex gap-4">
-                    <div className="w-12 h-12 rounded-full bg-yoga-clay/20 flex items-center justify-center flex-shrink-0">
-                      <Heart className="text-yoga-clay h-6 w-6" />
+                    <div className="w-12 h-12 rounded-full bg-yoga-deep-purple/20 flex items-center justify-center flex-shrink-0">
+                      <Speech className="text-yoga-deep-purple h-6 w-6" />
                     </div>
                     <div>
                       <h3 className="text-xl font-display font-medium text-yoga-charcoal mb-2">
-                        Self-Care Priority
+                        Expert-Led Classes
                       </h3>
                       <p className="text-yoga-charcoal/70">
-                        Dedicated time to nurture your body and mind during this
-                        crucial recovery period.
+                        Learn from certified instructors specializing in
+                        postnatal recovery
                       </p>
                     </div>
                   </div>
 
                   <div className="flex gap-4">
                     <div className="w-12 h-12 rounded-full bg-yoga-deep-purple/20 flex items-center justify-center flex-shrink-0">
-                      <Users className="text-yoga-deep-purple h-6 w-6" />
+                      <Waves className="text-yoga-deep-purple h-6 w-6" />
                     </div>
                     <div>
                       <h3 className="text-xl font-display font-medium text-yoga-charcoal mb-2">
-                        Community Connection
+                        Flexible Schedule
                       </h3>
                       <p className="text-yoga-charcoal/70">
-                        Build relationships with other new mothers sharing
-                        similar experiences and challenges.
+                        Access pre-recorded modules & live sessions to fit your
+                        busy life
                       </p>
                     </div>
                   </div>
 
                   <div className="flex gap-4">
-                    <div className="w-12 h-12 rounded-full bg-yoga-sage/20 flex items-center justify-center flex-shrink-0">
-                      <ShieldCheck className="text-yoga-sage h-6 w-6" />
+                    <div className="w-12 h-12 rounded-full bg-yoga-deep-purple/20 flex items-center justify-center flex-shrink-0">
+                      <LocateFixed className="text-yoga-deep-purple h-6 w-6" />
                     </div>
                     <div>
                       <h3 className="text-xl font-display font-medium text-yoga-charcoal mb-2">
-                        Expert Guidance
+                        Ayurvedic & Holistic Guidance
                       </h3>
                       <p className="text-yoga-charcoal/70">
-                        Led by instructors specifically trained in postpartum
-                        recovery and women's health.
+                        Natural healing practices, including Ayurvedic nutrition
+                        and lifestyle support
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex gap-4">
+                    <div className="w-12 h-12 rounded-full bg-yoga-deep-purple/20 flex items-center justify-center flex-shrink-0">
+                      <Timer className="text-yoga-deep-purple h-6 w-6" />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-display font-medium text-yoga-charcoal mb-2">
+                        Time-Efficient Workouts
+                      </h3>
+                      <p className="text-yoga-charcoal/70">
+                        Just 20-30 minutes a day to help you regain strength and
+                        energy
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex gap-4">
+                    <div className="w-12 h-12 rounded-full bg-yoga-deep-purple/20 flex items-center justify-center flex-shrink-0">
+                      <PersonStanding className="text-yoga-deep-purple h-6 w-6" />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-display font-medium text-yoga-charcoal mb-2">
+                        Full-Body Recovery Plan
+                      </h3>
+                      <p className="text-yoga-charcoal/70">
+                        A structured blend of strength training, yoga, Pilates,
+                        endurance, and mindfulness—so you heal fully, not just
+                        get “back in shape”
                       </p>
                     </div>
                   </div>
                 </div>
 
-                <Button className="bg-yoga-deep-purple hover:bg-yoga-deep-purple/90 text-white rounded-full px-8 py-6 text-base">
+                <Button className="bg-yoga-deep-purple hover:bg-yoga-deep-purple/90 text-white rounded-full px-8 py-6 text-base hidden">
                   Learn More About Our Approach
                 </Button>
               </div>
