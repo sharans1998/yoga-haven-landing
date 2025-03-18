@@ -67,9 +67,13 @@ const Hero = () => {
                 "text-base"
               )}
               role="link"
-              // ref="#classes"
+              onClick={() => {
+                document
+                  .querySelector("#services")
+                  ?.scrollIntoView({ behavior: "smooth" });
+              }}
             >
-              Explore Our Classes
+              Explore Our Services
             </Button>
             <Button
               variant="outline"

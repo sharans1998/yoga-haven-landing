@@ -48,7 +48,7 @@ const ServiceCard = ({
     <div
       ref={cardRef}
       className={cn(
-        "section-transition bg-white rounded-3xl p-8 shadow-sm border border-yoga-sand transition-all duration-300",
+        "section-transition bg-white rounded-3xl p-8 shadow-sm border border-yoga-sand transition-all duration-300 h-full flex flex-col ",
         "hover:shadow-md hover:translate-y-[-5px]"
       )}
       style={{ transitionDelay: `${delay * 0.1}s` }}
@@ -71,7 +71,7 @@ const ServiceCard = ({
       </p>
 
       <Button
-        className="bg-transparent hover:bg-yoga-deep-purple/5 text-yoga-deep-purple hover:text-yoga-deep-purple px-0 py-0"
+        className="bg-transparent hover:bg-yoga-deep-purple/5 text-yoga-deep-purple hover:text-yoga-deep-purple px-0 py-0 mt-auto"
         variant="ghost"
       >
         Learn more →

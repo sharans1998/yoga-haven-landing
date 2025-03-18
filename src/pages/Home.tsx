@@ -35,7 +35,7 @@ const Home = () => {
   }, [toast]);
 
   return (
-    <div className="min-h-screen bg-yoga-lilac">
+    <div className="min-h-screen bg-yoga-lilac" id="services">
       <Navbar />
       <main>
         <Hero />
