@@ -16,12 +16,14 @@ const ServiceCard = ({
   icon: Icon,
   delay,
   colorClass,
+  link,
 }: {
   title: string;
   description: string;
   icon: React.ElementType;
   delay: number;
   colorClass: string;
+  link?: string;
 }) => {
   const cardRef = useRef<HTMLDivElement>(null);
 
@@ -70,12 +72,14 @@ const ServiceCard = ({
         {description}
       </p>
 
-      <Button
-        className="bg-transparent hover:bg-yoga-deep-purple/5 text-yoga-deep-purple hover:text-yoga-deep-purple px-0 py-0 mt-auto"
-        variant="ghost"
+      <a
+        href={link ? link : "#"}
+        className="w-full mt-auto hover:bg-yoga-deep-purple/5  hover:text-yoga-deep-purple px-0 py-0 rounded-md"
       >
-        Learn more →
-      </Button>
+        <Button className="bg-transparent text-yoga-deep-purple hover:bg-transparent">
+          Learn more →
+        </Button>
+      </a>
     </div>
   );
 };
@@ -134,6 +138,7 @@ const Services = () => {
             icon={FileBadge2}
             delay={1}
             colorClass="bg-yoga-deep-purple"
+            link="/teachers-training"
           />
 
           <ServiceCard
