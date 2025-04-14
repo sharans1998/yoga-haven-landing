@@ -67,7 +67,7 @@ const Navbar = () => {
             Teachers Training
           </Link>
           <Link
-            to="/postpartum-fitness"
+            to="/postpartum"
             className="text-yoga-charcoal hover:text-yoga-deep-purple transition-colors duration-200 font-medium"
           >
             Postpartum Fitness
@@ -121,7 +121,7 @@ const Navbar = () => {
             Teachers Training
           </Link>
           <Link
-            to="/postpartum-fitness"
+            to="/postpartum"
             className="text-yoga-charcoal text-xl font-medium"
             onClick={() => setIsMobileMenuOpen(false)}
           >
