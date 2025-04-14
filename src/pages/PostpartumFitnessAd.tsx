@@ -1,7 +1,4 @@
 import React, { useEffect } from "react";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import CTA from "@/components/CTA";
 import { useToast } from "@/hooks/use-toast";
 import NameEmailPhone from "@/components/NameEmailPhone";
 
