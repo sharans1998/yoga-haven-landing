@@ -19,8 +19,7 @@ const Footer = () => {
               Yonitara
             </h3>
             <p className="text-yoga-charcoal/70 mb-6 leading-relaxed">
-              Creating space for wellness, growth, and community through the
-              practice of yoga.
+              Empowering with Informed Choices
             </p>
             <div className="flex gap-4">
               <a
@@ -55,42 +54,18 @@ const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="#"
+                  href="/"
+                  className="text-yoga-charcoal/70 hover:text-yoga-deep-purple transition-colors"
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/about-us"
                   className="text-yoga-charcoal/70 hover:text-yoga-deep-purple transition-colors"
                 >
                   About Us
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-yoga-charcoal/70 hover:text-yoga-deep-purple transition-colors"
-                >
-                  Services
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-yoga-charcoal/70 hover:text-yoga-deep-purple transition-colors"
-                >
-                  Instructors
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-yoga-charcoal/70 hover:text-yoga-deep-purple transition-colors"
-                >
-                  Class Schedule
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-yoga-charcoal/70 hover:text-yoga-deep-purple transition-colors"
-                >
-                  Events
                 </a>
               </li>
             </ul>
@@ -104,42 +79,27 @@ const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="#"
+                  href="/teachers-training"
                   className="text-yoga-charcoal/70 hover:text-yoga-deep-purple transition-colors"
                 >
-                  Post-Partum Fitness
+                  Teachers Training
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/postpartum"
                   className="text-yoga-charcoal/70 hover:text-yoga-deep-purple transition-colors"
                 >
-                  Teacher Training
+                  Postpartum Fitness
                 </a>
               </li>
+
               <li>
                 <a
-                  href="#"
+                  href="/postpatrum-fitness"
                   className="text-yoga-charcoal/70 hover:text-yoga-deep-purple transition-colors"
                 >
                   Daily Classes
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-yoga-charcoal/70 hover:text-yoga-deep-purple transition-colors"
-                >
-                  Workshops
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-yoga-charcoal/70 hover:text-yoga-deep-purple transition-colors"
-                >
-                  Private Sessions
                 </a>
               </li>
             </ul>
