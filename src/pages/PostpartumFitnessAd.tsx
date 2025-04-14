@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useToast } from "@/hooks/use-toast";
-import NameEmailPhone from "@/components/NameEmailPhone";
+// import NameEmailPhone from "@/components/NameEmailPhone";
 
 const PostpartumFitnessAd = () => {
   const { toast } = useToast();
@@ -57,7 +57,7 @@ const PostpartumFitnessAd = () => {
             created a proven formula that helped us heal, feel strong, and
             thrive - and now we&apos;re sharing it with you!
           </p>
-          <NameEmailPhone />
+          {/* <NameEmailPhone /> */}
           <p className="mt-4">
             <strong>👩🏻‍🍼 Led by New Moms & Experts:</strong> <br />
             🔥 Shruthi Jain - Marathoner, Pregnancy & Postpartum Trainer, Birth
