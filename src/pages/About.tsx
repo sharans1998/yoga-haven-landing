@@ -89,7 +89,7 @@ const About = () => {
           </div>
 
           {/* Scroll indicator */}
-          <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
+          <div className="absolute bottom-10 flex items-center flex-col w-full animate-bounce">
             <span className="text-white/80 text-sm mb-2">Scroll Down</span>
             <svg
               className="w-6 h-6 text-white/80"
