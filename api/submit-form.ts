@@ -1,38 +1,30 @@
-const { VercelRequest, VercelResponse } = require('@vercel/node');
+import type { VercelRequest, VercelResponse } from '@vercel/node';
 
-/**
- * @typedef {Object} FormQuestion
- * @property {string} id
- * @property {string} value
- */
+interface FormQuestion {
+    id: string;
+    value: string;
+}
 
-/**
- * @typedef {Object} FormSubmission
- * @property {string} submissionTime
- * @property {FormQuestion[]} questions
- */
+interface FormSubmission {
+    submissionTime: string;
+    questions: FormQuestion[];
+}
 
-/**
- * @typedef {Object} RequestBody
- * @property {string} formId
- * @property {FormSubmission[]} submissions
- */
+interface RequestBody {
+    formId: string;
+    submissions: FormSubmission[];
+}
 
-/**
- * @param {VercelRequest} req
- * @param {VercelResponse} res
- */
-async function handler(
-    req,
-    res
+export default async function handler(
+    req: VercelRequest,
+    res: VercelResponse
 ) {
     if (req.method !== 'POST') {
         return res.status(405).json({ message: 'Method not allowed' });
     }
 
     try {
-        /** @type {RequestBody} */
-        const body = req.body;
+        const body = req.body as RequestBody;
         const { formId, submissions } = body;
 
         if (!formId) {
@@ -62,5 +54,3 @@ async function handler(
         return res.status(500).json({ message: 'Internal server error' });
     }
 }
-
-module.exports = handler;
