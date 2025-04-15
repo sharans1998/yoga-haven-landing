@@ -1,30 +1,38 @@
-import type { VercelRequest, VercelResponse } from '@vercel/node';
+const { VercelRequest, VercelResponse } = require('@vercel/node');
 
-interface FormQuestion {
-    id: string;
-    value: string;
-}
+/**
+ * @typedef {Object} FormQuestion
+ * @property {string} id
+ * @property {string} value
+ */
 
-interface FormSubmission {
-    submissionTime: string;
-    questions: FormQuestion[];
-}
+/**
+ * @typedef {Object} FormSubmission
+ * @property {string} submissionTime
+ * @property {FormQuestion[]} questions
+ */
 
-interface RequestBody {
-    formId: string;
-    submissions: FormSubmission[];
-}
+/**
+ * @typedef {Object} RequestBody
+ * @property {string} formId
+ * @property {FormSubmission[]} submissions
+ */
 
-export default async function handler(
-    req: VercelRequest,
-    res: VercelResponse
+/**
+ * @param {VercelRequest} req
+ * @param {VercelResponse} res
+ */
+async function handler(
+    req,
+    res
 ) {
     if (req.method !== 'POST') {
         return res.status(405).json({ message: 'Method not allowed' });
     }
 
     try {
-        const body: RequestBody = req.body;
+        /** @type {RequestBody} */
+        const body = req.body;
         const { formId, submissions } = body;
 
         if (!formId) {
