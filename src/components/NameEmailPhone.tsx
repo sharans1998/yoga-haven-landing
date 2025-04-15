@@ -32,6 +32,7 @@ function MyForm() {
   // Make a server side request here
   const submitForm = async (data: FormData) => {
     const body = {
+      formId: "bLpqKfQVDZus",
       submissions: [
         {
           submissionTime: new Date().toString().replace(/\s*\(.*?\)\s*/, ""),
@@ -53,15 +54,11 @@ function MyForm() {
       ],
     };
 
-    const url =
-      "https://api.fillout.com/v1/api/forms/bLpqKfQVDZus/submissions/";
-
     try {
-      const response = await fetch(url, {
+      const response = await fetch("/api/submit-form", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer ${import.meta.env.VITE_FO_API_KEY}`,
         },
         body: JSON.stringify(body),
       });
