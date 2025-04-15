@@ -21,6 +21,5 @@ export default defineConfig(({ mode }) => ({
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
-  },
-  base: process.env.NODE_ENV === 'production' ? '/yoga-haven-landing/' : '/'
+  }
 }));
