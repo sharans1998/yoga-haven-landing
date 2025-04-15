@@ -10,27 +10,7 @@ dotenv.config();
 export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
-    port: 8080,
-    proxy: {
-      "/api": {
-        target: "https://api.fillout.com/v1/api",
-        changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, ""),
-        configure: (proxy) => {
-          proxy.on('proxyReq', (proxyReq, req) => {
-            proxyReq.setHeader('Authorization', `Bearer ${process.env.VITE_FO_API_KEY}`);
-            proxyReq.setHeader('Content-Type', 'application/json');
-            console.log(`Proxying request: ${req.method} ${req.url}`);
-            console.log('Request headers:', proxyReq.getHeaders());
-          });
-          proxy.on('proxyRes', (proxyRes, req, res) => {
-            console.log(`Received response for: ${req.method} ${req.url}`);
-            console.log('Response status:', proxyRes.statusCode);
-            console.log('Response headers:', proxyRes.headers);
-          });
-        },
-      },
-    },
+    port: 8080
   },
   plugins: [
     react(),

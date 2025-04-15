@@ -53,22 +53,30 @@ function MyForm() {
       ],
     };
 
-    const url = "/api/forms/bLpqKfQVDZus/submissions/";
+    const url =
+      "https://api.fillout.com/v1/api/forms/bLpqKfQVDZus/submissions/";
 
-    const response = await fetch(url, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(body),
-    });
+    try {
+      const response = await fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${import.meta.env.VITE_FO_API_KEY}`,
+        },
+        body: JSON.stringify(body),
+      });
 
-    if (response.ok) {
-      setFormState(FORM_STATE.success);
-      setTimeout(() => {
+      if (response.ok) {
         setFormState(FORM_STATE.success);
-      }, 2000);
-    } else {
+        setTimeout(() => {
+          setFormState(FORM_STATE.success);
+        }, 2000);
+      } else {
+        console.error("Form submission failed:", await response.text());
+        setFormState(FORM_STATE.unfilled);
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
       setFormState(FORM_STATE.unfilled);
     }
   };
