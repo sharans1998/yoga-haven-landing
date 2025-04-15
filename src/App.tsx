@@ -13,14 +13,12 @@ import PostpartumFitnessAd from "./pages/PostpartumFitnessAd";
 const queryClient = new QueryClient();
 
 const App = () => {
-  const basename =
-    process.env.NODE_ENV === "production" ? "/yoga-haven-landing/" : "/";
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <Toaster />
         <Sonner />
-        <BrowserRouter basename={basename}>
+        <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
@@ -38,4 +36,5 @@ const App = () => {
     </QueryClientProvider>
   );
 };
+
 export default App;
