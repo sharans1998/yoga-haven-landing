@@ -94,8 +94,8 @@ const Navbar = () => {
       {/* Mobile menu */}
       <div
         className={cn(
-          "fixed inset-0 bg-yoga-lilac flex flex-col pt-24 px-6 md:hidden z-40 transition-transform duration-300 ease-in-out",
-          isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
+          "fixed inset-0 bg-white/30 backdrop-blur-md flex flex-col mt-16 md:hidden z-[1000] transition-transform duration-300 ease-in-out min-h-screen",
+          isMobileMenuOpen ? "translate-x-0 px-6" : "translate-x-[110%]"
         )}
       >
         <nav className="flex flex-col gap-6 items-center">

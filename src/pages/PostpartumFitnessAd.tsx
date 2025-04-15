@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import { useToast } from "@/hooks/use-toast";
-// import NameEmailPhone from "@/components/NameEmailPhone";
+import NameEmailPhone from "@/components/NameEmailPhone";
+import MinimalHeader from "@/components/MinimalHeader";
+import MinimalFooter from "@/components/MinimalFooter";
 
 const PostpartumFitnessAd = () => {
   const { toast } = useToast();
@@ -32,6 +34,8 @@ const PostpartumFitnessAd = () => {
 
   return (
     <div className="min-h-screen bg-yoga-lilac">
+      {/* Minimal Header */}
+      <MinimalHeader />
       <main>
         {/* Banner Section */}
         <div className="container mx-auto px-6 pt-20 pb-10 md:pt-20 md:pb-10 relative z-20">
@@ -49,7 +53,7 @@ const PostpartumFitnessAd = () => {
         </div>
 
         {/* Workshop Details Section */}
-        <div className="mx-auto pb-16 max-w-[600px]">
+        <div className="mx-auto px-6 md:px-0 pb-16 max-w-[600px]">
           <p className="mb-4">
             <strong>💖 Mama, we see you! </strong>
             “Will my body ever feel strong again?” We&apos;ve been there - and
@@ -57,7 +61,7 @@ const PostpartumFitnessAd = () => {
             created a proven formula that helped us heal, feel strong, and
             thrive - and now we&apos;re sharing it with you!
           </p>
-          {/* <NameEmailPhone /> */}
+          <NameEmailPhone />
           <p className="mt-4">
             <strong>👩🏻‍🍼 Led by New Moms & Experts:</strong> <br />
             🔥 Shruthi Jain - Marathoner, Pregnancy & Postpartum Trainer, Birth
@@ -105,6 +109,7 @@ const PostpartumFitnessAd = () => {
           </p>
         </div>
       </main>
+      <MinimalFooter />
     </div>
   );
 };

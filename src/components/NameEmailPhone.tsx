@@ -53,21 +53,11 @@ function MyForm() {
       ],
     };
 
-    console.log(
-      "import.meta.env.VITE_FO_API_KEY",
-      import.meta.env.VITE_FO_API_KEY
-    );
-    const headers = {
-      Authorization: `Bearer ${import.meta.env.VITE_FO_API_KEY}`,
-    };
-
-    const url =
-      "https://api.fillout.com/v1/api/forms/bLpqKfQVDZus/submissions/";
+    const url = "/api/forms/bLpqKfQVDZus/submissions/";
 
     const response = await fetch(url, {
       method: "POST",
       headers: {
-        ...headers,
         "Content-Type": "application/json",
       },
       body: JSON.stringify(body),
