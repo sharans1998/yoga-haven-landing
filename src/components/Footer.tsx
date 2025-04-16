@@ -6,6 +6,7 @@ import {
   Mail,
   MapPin,
   Phone,
+  Youtube,
 } from "lucide-react";
 
 const Footer = () => {
@@ -16,32 +17,32 @@ const Footer = () => {
           {/* Brand */}
           <div className="md:col-span-1">
             <h3 className="text-2xl font-display font-medium text-yoga-charcoal mb-4">
-              Yonitara
+              <img src="/logo.svg" alt="Yonitara Birth" className="h-8" />
             </h3>
             <p className="text-yoga-charcoal/70 mb-6 leading-relaxed">
               Empowering with Informed Choices
             </p>
             <div className="flex gap-4">
               <a
-                href="#"
+                href="https://www.instagram.com/yonitara.birth"
                 className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-yoga-deep-purple border border-yoga-sand hover:bg-yoga-deep-purple hover:text-white transition-colors duration-300"
                 aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://www.facebook.com/YoniTara.birth"
                 className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-yoga-deep-purple border border-yoga-sand hover:bg-yoga-deep-purple hover:text-white transition-colors duration-300"
                 aria-label="Facebook"
               >
                 <Facebook className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://youtube.com/@yonitarabirth"
                 className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-yoga-deep-purple border border-yoga-sand hover:bg-yoga-deep-purple hover:text-white transition-colors duration-300"
                 aria-label="Twitter"
               >
-                <Twitter className="w-5 h-5" />
+                <Youtube className="w-5 h-5" />
               </a>
             </div>
           </div>
@@ -117,13 +118,26 @@ const Footer = () => {
                   <span className="text-yoga-charcoal/70">Call us</span>
                 </a>
               </li>
-              <li className="flex items-center gap-3">
-                <Mail className="w-5 h-5 text-yoga-deep-purple" />
+              <li>
                 <a
                   href="mailto:yonitara.birth@gmail.com"
-                  className="text-yoga-charcoal/70 hover:text-yoga-deep-purple transition-colors"
+                  className="text-yoga-charcoal/70 hover:text-yoga-deep-purple transition-colors flex items-center gap-3"
                 >
+                  <Mail className="w-5 h-5 text-yoga-deep-purple" />
                   Write to us
+                </a>
+              </li>
+              <li>
+                <a
+                  className="flex items-center gap-3"
+                  href="https://wa.me/919108700146"
+                >
+                  <img
+                    src="/whatsapp.svg"
+                    alt="WhatsApp"
+                    className="w-5 h-5 text-yoga-deep-purple"
+                  />
+                  <span className="text-yoga-charcoal/70">WhatsApp</span>
                 </a>
               </li>
             </ul>
@@ -137,13 +151,13 @@ const Footer = () => {
             </p>
             <div className="flex gap-6 mt-4 md:mt-0">
               <a
-                href="#"
+                href="/privacy-policy"
                 className="text-yoga-charcoal/60 text-sm hover:text-yoga-deep-purple transition-colors"
               >
                 Privacy Policy
               </a>
               <a
-                href="#"
+                href="/terms-and-conditions"
                 className="text-yoga-charcoal/60 text-sm hover:text-yoga-deep-purple transition-colors"
               >
                 Terms of Service

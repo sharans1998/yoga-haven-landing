@@ -12,6 +12,8 @@ import PostpartumFitnessAd from "./pages/PostpartumFitnessAd";
 import TrainingAd from "./pages/TrainingAd";
 import TrainingCallback from "./pages/TrainingCallbackAd";
 import TrainingCallbackConfirm from "./pages/TrainingCallbackConfirmAd";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsAndConditions from "./pages/TermsAndConditions";
 
 const queryClient = new QueryClient();
 
@@ -36,6 +38,11 @@ const App = () => {
             <Route
               path="/training/call-back/confirm"
               element={<TrainingCallbackConfirm />}
+            />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route
+              path="/terms-and-conditions"
+              element={<TermsAndConditions />}
             />
 
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
