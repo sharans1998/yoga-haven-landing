@@ -5,6 +5,7 @@ import Services from "@/components/Services";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 import { useToast } from "@/hooks/use-toast";
+import SEO from "@/components/SEO";
 
 const Home = () => {
   const { toast } = useToast();
@@ -36,6 +37,7 @@ const Home = () => {
 
   return (
     <div className="min-h-screen bg-yoga-lilac" id="services">
+      <SEO />
       <Navbar />
       <main>
         <Hero />
