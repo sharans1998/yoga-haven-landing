@@ -29,14 +29,6 @@ const Hero = () => {
       {/* Background image with parallax effect */}
       <div ref={imageRef} className="absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-yoga-lilac/30 backdrop-blur-[2px]"></div>
-        <div
-          className="w-full h-full bg-center bg-cover animate-image-pan"
-          style={{
-            backgroundImage:
-              'url("https://images.unsplash.com/photo-1518495973542-4542c06a5843?q=80&w=2000&auto=format")',
-            backgroundPosition: "center 30%",
-          }}
-        />
       </div>
 
       <div className="container mx-auto px-6 pt-32 pb-20 md:pt-40 md:pb-32 relative z-20">

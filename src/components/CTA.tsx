@@ -28,14 +28,6 @@ const CTA = () => {
       {/* Background with blur effect */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-yoga-lilac/90 backdrop-blur-sm"></div>
-        <div
-          className="w-full h-full bg-center bg-cover"
-          style={{
-            backgroundImage:
-              'url("https://images.unsplash.com/photo-1518495973542-4542c06a5843?q=80&w=2000&auto=format")',
-            backgroundPosition: "center bottom",
-          }}
-        />
       </div>
 
       {/* Decorative elements */}

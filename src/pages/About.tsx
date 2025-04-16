@@ -44,7 +44,7 @@ const About = () => {
             className="absolute inset-0 w-full h-full bg-center bg-cover"
             style={{
               backgroundImage:
-                'url("https://images.unsplash.com/photo-1552196563-55cd4e45efb3?q=80&w=2000&auto=format")',
+                'url("https://res.cloudinary.com/dyb4kpthp/image/upload/q_auto/v1744820772/Shortlisted_pic_for_Website_1_c54cl9.jpg")',
               backgroundPosition: "center center",
             }}
           >
@@ -181,7 +181,7 @@ const About = () => {
               <div className="bg-white rounded-3xl overflow-hidden shadow-sm border border-yoga-sand section-transition">
                 <div className="h-80 overflow-hidden">
                   <img
-                    src="https://res.cloudinary.com/dyb4kpthp/image/upload/v1741445137/Shruthi-about-us_u5ncwu?q=60&w=1000&auto=format"
+                    src="https://res.cloudinary.com/dyb4kpthp/image/upload/f_auto,q_auto,w_800,c_limit/v1741445137/Shruthi-about-us_u5ncwu.jpg"
                     alt="Emma Thompson"
                     className="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-105"
                   />
@@ -220,7 +220,7 @@ const About = () => {
               <div className="bg-white rounded-3xl overflow-hidden shadow-sm border border-yoga-sand section-transition">
                 <div className="h-80 overflow-hidden">
                   <img
-                    src="https://res.cloudinary.com/dyb4kpthp/image/upload/v1741445160/Pankhuree-about-us_dhu66v?q=60&w=1000&auto=format"
+                    src="https://res.cloudinary.com/dyb4kpthp/image/upload/f_auto,q_auto,w_800,c_limit/v1741445160/Pankhuree-about-us_dhu66v.jpg"
                     alt="David Chen"
                     className="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-105"
                   />
