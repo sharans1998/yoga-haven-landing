@@ -94,41 +94,43 @@ const Navbar = () => {
       {/* Mobile menu */}
       <div
         className={cn(
-          "fixed inset-0 bg-white/30 backdrop-blur-md flex flex-col mt-16 md:hidden z-[1000] transition-transform duration-300 ease-in-out min-h-screen",
-          isMobileMenuOpen ? "translate-x-0 px-6" : "translate-x-[110%]"
+          "fixed inset-x-0 top-[4.5rem] bg-yoga-lilac/95 backdrop-blur-md flex flex-col md:hidden z-[1000] transition-all duration-300 ease-in-out rounded-2xl",
+          isMobileMenuOpen
+            ? "opacity-100 translate-y-0"
+            : "opacity-0 -translate-y-4 pointer-events-none"
         )}
       >
-        <nav className="flex flex-col gap-6 items-center">
+        <nav className="flex flex-col py-8 px-6 gap-6">
           <Link
             to="/"
-            className="text-yoga-charcoal text-xl font-medium"
+            className="text-yoga-charcoal hover:text-yoga-deep-purple transition-colors duration-200 text-lg font-medium"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Home
           </Link>
           <Link
             to="/about"
-            className="text-yoga-charcoal text-xl font-medium"
+            className="text-yoga-charcoal hover:text-yoga-deep-purple transition-colors duration-200 text-lg font-medium"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             About
           </Link>
           <Link
             to="/teachers-training"
-            className="text-yoga-charcoal text-xl font-medium"
+            className="text-yoga-charcoal hover:text-yoga-deep-purple transition-colors duration-200 text-lg font-medium"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Teachers Training
           </Link>
           <Link
             to="/postpartum"
-            className="text-yoga-charcoal text-xl font-medium"
+            className="text-yoga-charcoal hover:text-yoga-deep-purple transition-colors duration-200 text-lg font-medium"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Postpartum Fitness
           </Link>
           <Button
-            className="bg-yoga-deep-purple hover:bg-yoga-deep-purple/90 text-white mt-4 rounded-full px-6 w-full max-w-xs"
+            className="bg-yoga-deep-purple hover:bg-yoga-deep-purple/90 text-white mt-4 rounded-full px-6 py-6 w-full"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Book a Class
