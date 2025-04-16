@@ -56,14 +56,6 @@ const PostpartumFitness = () => {
           {/* Background image */}
           <div className="absolute inset-0 -z-10">
             <div className="absolute inset-0 bg-yoga-lilac/30 backdrop-blur-[2px]"></div>
-            <div
-              className="w-full h-full bg-center bg-cover"
-              style={{
-                backgroundImage:
-                  'url("https://images.unsplash.com/photo-1544126592-87d29226b446?q=80&w=2000&auto=format")',
-                backgroundPosition: "center 40%",
-              }}
-            />
           </div>
 
           <div className="container mx-auto px-6 pt-32 pb-20 md:pt-40 md:pb-32 relative z-20">
@@ -168,8 +160,8 @@ const PostpartumFitness = () => {
                 </div>
               </div>
 
-              <div className="relative h-[500px] md:h-[600px] section-transition bg-indigo-300">
-                <div className="absolute w-3/4 h-3/4 top-0 left-0 z-10 image-reveal image-reveal-delay-1">
+              <div className="relative h-[500px] md:h-[600px] section-transition">
+                {/*<div className="absolute w-3/4 h-3/4 top-0 left-0 z-10 image-reveal image-reveal-delay-1">
                   <div className="w-full h-full overflow-hidden rounded-2xl">
                     <img
                       src="https://images.unsplash.com/photo-1599447292461-74fb7d5a541a?q=80&w=1200&auto=format"
@@ -188,6 +180,16 @@ const PostpartumFitness = () => {
                     />
                   </div>
                   <div className="absolute -top-4 -left-4 w-24 h-24 md:w-32 md:h-32 bg-yoga-clay/50 rounded-2xl -z-10"></div>
+                </div> */}
+                <div className="absolute w-5/6 h-5/6 z-10 image-reveal image-reveal-delay-1">
+                  <div className="w-full h-full overflow-hidden rounded-2xl">
+                    <img
+                      src="https://res.cloudinary.com/dyb4kpthp/image/upload/v1744820832/Shortlisted_pic_for_Website_diz7pd.jpg"
+                      alt="Yoga teacher training session"
+                      className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                    />
+                  </div>
+                  <div className="absolute -bottom-4 -right-4 w-24 h-24 md:w-32 md:h-32 bg-yoga-sage rounded-2xl -z-10"></div>
                 </div>
               </div>
             </div>
@@ -198,8 +200,8 @@ const PostpartumFitness = () => {
         <section className="py-16 md:py-24 bg-gradient-to-b from-yoga-lilac to-white">
           <div className="container mx-auto px-6">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div className="relative h-[500px] order-2 lg:order-1 section-transition bg-indigo-300">
-                <div className="absolute w-3/4 h-3/4 top-0 left-0 z-10 image-reveal image-reveal-delay-1">
+              <div className="relative h-[500px] order-2 lg:order-1 section-transition">
+                {/* <div className="absolute w-3/4 h-3/4 top-0 left-0 z-10 image-reveal image-reveal-delay-1">
                   <div className="w-full h-full overflow-hidden rounded-2xl">
                     <img
                       src="https://images.unsplash.com/photo-1607247098789-dafd523388e4?q=80&w=1200&auto=format"
@@ -219,6 +221,16 @@ const PostpartumFitness = () => {
                     />
                   </div>
                   <div className="absolute -top-4 -left-4 w-24 h-24 md:w-32 md:h-32 bg-yoga-clay/50 rounded-2xl -z-10"></div>
+                </div> */}
+                <div className="absolute w-5/6 h-5/6 z-10 image-reveal image-reveal-delay-1">
+                  <div className="w-full h-full overflow-hidden rounded-2xl">
+                    <img
+                      src="https://res.cloudinary.com/dyb4kpthp/image/upload/v1744820832/Shortlisted_Pic_for_Website_3_y1epn4.jpg"
+                      alt="Yoga teacher training session"
+                      className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                    />
+                  </div>
+                  <div className="absolute -bottom-4 -right-4 w-24 h-24 md:w-32 md:h-32 bg-yoga-sage rounded-2xl -z-10"></div>
                 </div>
               </div>
 

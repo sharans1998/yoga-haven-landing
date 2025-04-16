@@ -102,10 +102,12 @@
 
 .image-reveal-delay-1 {
   animation-delay: 0.2s;
+  opacity: 1;
 }
 
 .image-reveal-delay-2 {
   animation-delay: 0.4s;
+  opacity: 1;
 }
 
 .image-reveal-delay-3 {

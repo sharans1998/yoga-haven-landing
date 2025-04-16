@@ -158,27 +158,36 @@ const TeachersTraining = () => {
                 </div>
               </div>
 
-              <div className="relative h-[500px] md:h-[600px] section-transition bg-indigo-300">
-                <div className="absolute w-3/4 h-3/4 top-0 left-0 z-10 image-reveal image-reveal-delay-1">
+              <div className="relative h-[500px] md:h-[600px] section-transition">
+                {/* <div className="absolute w-3/4 h-3/4 top-0 left-0 z-10 image-reveal image-reveal-delay-1">
                   <div className="w-full h-full overflow-hidden rounded-2xl">
                     <img
-                      src="https://images.unsplash.com/photo-1599447292461-74fb7d5a541a?q=80&w=1200&auto=format"
+                      src="https://res.cloudinary.com/dyb4kpthp/image/upload/q_auto,w_1000,f_auto/v1744820830/Shortlisted_pic_for_Website_2_rftkpg.jpg"
                       alt="Yoga teacher training session"
                       className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                     />
                   </div>
                   <div className="absolute -bottom-4 -right-4 w-24 h-24 md:w-32 md:h-32 bg-yoga-sage rounded-2xl -z-10"></div>
                 </div>
-
                 <div className="absolute w-2/3 h-2/3 bottom-0 right-0 image-reveal image-reveal-delay-2">
                   <div className="w-full h-full overflow-hidden rounded-2xl">
                     <img
-                      src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1200&auto=format"
+                      src="https://res.cloudinary.com/dyb4kpthp/image/upload/v1744820774/Shortlisted_pic_for_Website_diz7pd.jpg"
                       alt="Yoga teacher training workshop"
                       className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                     />
                   </div>
                   <div className="absolute -top-4 -left-4 w-24 h-24 md:w-32 md:h-32 bg-yoga-clay/50 rounded-2xl -z-10"></div>
+                </div> */}
+                <div className="absolute w-5/6 h-5/6 z-10 image-reveal image-reveal-delay-1">
+                  <div className="w-full h-full overflow-hidden rounded-2xl">
+                    <img
+                      src="https://res.cloudinary.com/dyb4kpthp/image/upload/q_auto,w_1000,f_auto/v1744820830/Shortlisted_pic_for_Website_2_rftkpg.jpg"
+                      alt="Yoga teacher training session"
+                      className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                    />
+                  </div>
+                  <div className="absolute -bottom-4 -right-4 w-24 h-24 md:w-32 md:h-32 bg-yoga-sage rounded-2xl -z-10"></div>
                 </div>
               </div>
             </div>
