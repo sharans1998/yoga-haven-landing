@@ -9,6 +9,9 @@ import TeachersTraining from "./pages/TeachersTraining";
 import PostpartumFitness from "./pages/PostpartumFitness";
 import NotFound from "./pages/NotFound";
 import PostpartumFitnessAd from "./pages/PostpartumFitnessAd";
+import TrainingAd from "./pages/TrainingAd";
+import TrainingCallback from "./pages/TrainingCallbackAd";
+import TrainingCallbackConfirm from "./pages/TrainingCallbackConfirmAd";
 
 const queryClient = new QueryClient();
 
@@ -28,6 +31,13 @@ const App = () => {
               element={<PostpartumFitnessAd />}
             />
             <Route path="/postpartum" element={<PostpartumFitness />} />
+            <Route path="/training" element={<TrainingAd />} />
+            <Route path="/training/call-back" element={<TrainingCallback />} />
+            <Route
+              path="/training/call-back/confirm"
+              element={<TrainingCallbackConfirm />}
+            />
+
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
