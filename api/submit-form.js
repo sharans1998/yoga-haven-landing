@@ -1,30 +1,10 @@
-import type { VercelRequest, VercelResponse } from '@vercel/node';
-
-interface FormQuestion {
-    id: string;
-    value: string;
-}
-
-interface FormSubmission {
-    submissionTime: string;
-    questions: FormQuestion[];
-}
-
-interface RequestBody {
-    formId: string;
-    submissions: FormSubmission[];
-}
-
-export default async function handler(
-    req: VercelRequest,
-    res: VercelResponse
-) {
+export default async function handler(req, res) {
     if (req.method !== 'POST') {
         return res.status(405).json({ message: 'Method not allowed' });
     }
 
     try {
-        const body = req.body as RequestBody;
+        const body = req.body;
         const { formId, submissions } = body;
 
         if (!formId) {
