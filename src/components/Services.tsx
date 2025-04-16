@@ -51,14 +51,15 @@ const ServiceCard = ({
       ref={cardRef}
       className={cn(
         "section-transition bg-white rounded-3xl p-8 shadow-sm border border-yoga-sand transition-all duration-300 h-full flex flex-col ",
-        "hover:shadow-md hover:translate-y-[-5px]"
+        "hover:shadow-md hover:translate-y-[-5px] group"
       )}
       style={{ transitionDelay: `${delay * 0.1}s` }}
     >
       <div
         className={cn(
           "w-16 h-16 rounded-2xl flex items-center justify-center mb-6",
-          colorClass
+          colorClass,
+          "group-hover:bg-yoga-deep-purple"
         )}
       >
         <Icon className="w-8 h-8 text-white" />
@@ -133,28 +134,29 @@ const Services = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <ServiceCard
-            title="Pre & Postnatal Teacher’s Training Certification"
+            title="Teacher’s Training Certification"
             description="A specialized training blending Eastern wisdom with Western science to support mothers beyond yoga."
             icon={FileBadge2}
             delay={1}
-            colorClass="bg-yoga-deep-purple"
+            colorClass="bg-yoga-deep-purple/80"
             link="/teachers-training"
           />
 
           <ServiceCard
-            title="Regular Yoga & Lifestyle Sessions"
+            title="Postnatal Rehab Program"
             description="Holistic classes designed to nurture women’s health, from menstrual health to menopause."
-            icon={CalendarClock}
+            icon={Baby}
             delay={2}
             colorClass="bg-yoga-deep-purple/80"
+            link="/postpartum"
           />
 
           <ServiceCard
-            title="One-on-One Consultations"
+            title="Regular Yoga & Lifestyle Sessions"
             description="Personalized support for fertility, pregnancy, and postnatal recovery through yoga, Ayurveda, and therapeutic practices."
-            icon={Speech}
+            icon={CalendarClock}
             delay={3}
-            colorClass="bg-yoga-deep-purple/60"
+            colorClass="bg-yoga-deep-purple/80"
           />
         </div>
       </div>
