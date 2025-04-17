@@ -133,7 +133,7 @@ const Navbar = () => {
             className="bg-yoga-deep-purple hover:bg-yoga-deep-purple/90 text-white mt-4 rounded-full px-6 py-6 w-full"
             onClick={() => setIsMobileMenuOpen(false)}
           >
-            Book a Class
+            Get in Touch
           </Button>
         </nav>
       </div>

@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import CTA from "@/components/CTA";
 import { useToast } from "@/hooks/use-toast";
-import { CheckCircle2, Baby } from "lucide-react";
+import { CheckCircle2, Baby, LucideAxis3D, Leaf } from "lucide-react";
 
 const TeachersTraining = () => {
   const { toast } = useToast();
@@ -77,14 +77,14 @@ const TeachersTraining = () => {
               </p>
 
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-slide-up">
-                <Button className="rounded-full text-white font-medium px-6 py-6 bg-yoga-deep-purple hover:bg-yoga-deep-purple/90 transition-all text-base">
+                {/* <Button className="rounded-full text-white font-medium px-6 py-6 bg-yoga-deep-purple hover:bg-yoga-deep-purple/90 transition-all text-base">
                   Apply Now
-                </Button>
+                </Button> */}
                 <Button
                   variant="outline"
                   className="rounded-full border-yoga-deep-purple text-yoga-deep-purple hover:bg-yoga-deep-purple/5 hover:text-yoga-deep-purple font-medium px-6 py-6 text-base"
                 >
-                  Download Syllabus
+                  Book a Call
                 </Button>
               </div>
             </div>
@@ -106,7 +106,7 @@ const TeachersTraining = () => {
                 </h2>
 
                 <p className="text-yoga-charcoal/80 text-lg mb-6 leading-relaxed">
-                  A comprehensive training for yoga instructors looking to
+                  A comprehensive training for fitness instructors looking to
                   specialize in pre & postnatal health. This evidence-based
                   certification merges Eastern and Western knowledge to equip
                   you with the skills needed to support pregnant and postpartum
@@ -127,7 +127,7 @@ const TeachersTraining = () => {
                         Yoga Alliance Certified
                       </h3>
                       <p className="text-yoga-charcoal/70">
-                        Recognized 200-hour and 300-hour certifications
+                        Recognized 130-hour certifications
                       </p>
                     </div>
                   </div>
@@ -136,10 +136,10 @@ const TeachersTraining = () => {
                     <CheckCircle2 className="text-yoga-deep-purple mt-1 h-5 w-5 flex-shrink-0" />
                     <div>
                       <h3 className="font-medium text-yoga-charcoal">
-                        Flexible Scheduling
+                        Live Online Classes
                       </h3>
                       <p className="text-yoga-charcoal/70">
-                        Weekend intensives or extended programs available
+                        Recordings available for all sessions
                       </p>
                     </div>
                   </div>
@@ -151,7 +151,7 @@ const TeachersTraining = () => {
                         Limited Class Size
                       </h3>
                       <p className="text-yoga-charcoal/70">
-                        Maximum 15 students for personalized attention
+                        Small batches for personalized attention
                       </p>
                     </div>
                   </div>
@@ -213,9 +213,9 @@ const TeachersTraining = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-white rounded-3xl p-8 shadow-sm border border-yoga-sand transition-all duration-300 hover:shadow-md hover:translate-y-[-5px] section-transition">
-                <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 bg-yoga-deep-purple">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="bg-white rounded-3xl p-8 shadow-sm border border-yoga-sand transition-all duration-300 hover:shadow-md hover:translate-y-[-5px] section-transition group">
+                <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 bg-yoga-deep-purple md:bg-yoga-deep-purple/60 group-hover:bg-yoga-deep-purple transition-colors duration-200">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="w-8 h-8 text-white"
@@ -239,7 +239,7 @@ const TeachersTraining = () => {
                 <ul className="space-y-3 text-yoga-charcoal/70 mb-6">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="text-yoga-deep-purple h-5 w-5 mt-0.5 flex-shrink-0" />
-                    <span>Safe asana modifications</span>
+                    <span>Safe exercise modifications</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="text-yoga-deep-purple h-5 w-5 mt-0.5 flex-shrink-0" />
@@ -247,7 +247,9 @@ const TeachersTraining = () => {
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="text-yoga-deep-purple h-5 w-5 mt-0.5 flex-shrink-0" />
-                    <span>Pregnancy anatomy essentials</span>
+                    <span>
+                      Diverse fitness forms like Pliates, Strength, etc.
+                    </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="text-yoga-deep-purple h-5 w-5 mt-0.5 flex-shrink-0" />
@@ -256,8 +258,8 @@ const TeachersTraining = () => {
                 </ul>
               </div>
 
-              <div className="bg-white rounded-3xl p-8 shadow-sm border border-yoga-sand transition-all duration-300 hover:shadow-md hover:translate-y-[-5px] section-transition">
-                <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 bg-yoga-deep-purple/80">
+              <div className="bg-white rounded-3xl p-8 shadow-sm border border-yoga-sand transition-all duration-300 hover:shadow-md hover:translate-y-[-5px] section-transition group">
+                <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 bg-yoga-deep-purple md:bg-yoga-deep-purple/60 group-hover:bg-yoga-deep-purple transition-colors duration-200">
                   <Baby className="text-white h-8 w-8" />
                 </div>
 
@@ -285,8 +287,8 @@ const TeachersTraining = () => {
                 </ul>
               </div>
 
-              <div className="bg-white rounded-3xl p-8 shadow-sm border border-yoga-sand transition-all duration-300 hover:shadow-md hover:translate-y-[-5px] section-transition">
-                <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 bg-yoga-deep-purple/60">
+              <div className="bg-white rounded-3xl p-8 shadow-sm border border-yoga-sand transition-all duration-300 hover:shadow-md hover:translate-y-[-5px] section-transition group">
+                <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 bg-yoga-deep-purple md:bg-yoga-deep-purple/60 group-hover:bg-yoga-deep-purple transition-colors duration-200">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="w-8 h-8 text-white"
@@ -322,6 +324,25 @@ const TeachersTraining = () => {
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="text-yoga-deep-purple h-5 w-5 mt-0.5 flex-shrink-0" />
                     <span>Healing through gentle movement</span>
+                  </li>
+                </ul>
+              </div>
+              <div className="bg-white rounded-3xl p-8 shadow-sm border border-yoga-sand transition-all duration-300 hover:shadow-md hover:translate-y-[-5px] section-transition group">
+                <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 bg-yoga-deep-purple md:bg-yoga-deep-purple/60 group-hover:bg-yoga-deep-purple transition-colors duration-200">
+                  <Leaf className="text-white h-8 w-8" />
+                </div>
+
+                <h3 className="text-2xl font-display font-medium text-yoga-charcoal mb-4">
+                  Ayurveda
+                </h3>
+                <ul className="space-y-3 text-yoga-charcoal/70 mb-6">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="text-yoga-deep-purple h-5 w-5 mt-0.5 flex-shrink-0" />
+                    <span>Garbha Sanskara activities</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="text-yoga-deep-purple h-5 w-5 mt-0.5 flex-shrink-0" />
+                    <span>Nutrition from an Ayurvedic perspective</span>
                   </li>
                 </ul>
               </div>

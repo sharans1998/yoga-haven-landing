@@ -124,7 +124,8 @@ const About = () => {
                 </div>
 
                 <h2 className="text-3xl md:text-4xl font-display font-medium text-yoga-charcoal mb-6 leading-tight">
-                  Empower Women with <span className="italic">Information</span>
+                  Empower Women with <span className="italic">Informed</span>{" "}
+                  Choices
                 </h2>
 
                 <p className="text-yoga-charcoal/80 text-lg mb-6 leading-relaxed">

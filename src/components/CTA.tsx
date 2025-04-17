@@ -1,7 +1,13 @@
 import React, { useRef, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 
-const CTA = () => {
+const CTA = ({
+  titlePre = "Begin Your PeriNatal Expert Journey",
+  titleItalics = "Today",
+  titlePost = "",
+  description = "Whether you're looking to become a premium perinatal expert, have a holistic understanding of pregnancy and postpartum or broaden your skill set, we're here to support you.",
+  buttonText = "Book a Call",
+}) => {
   const sectionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -40,24 +46,17 @@ const CTA = () => {
           className="max-w-3xl mx-auto text-center section-transition rounded-3xl bg-white/80 backdrop-blur-md p-10 md:p-16 shadow-sm border border-yoga-sand"
         >
           <h2 className="text-3xl md:text-4xl font-display font-medium text-yoga-charcoal mb-6">
-            Begin Your Yoga Journey <span className="italic">Today</span>
+            {titlePre} <span className="italic">{titleItalics}</span>{" "}
+            {titlePost}
           </h2>
 
           <p className="text-yoga-charcoal/80 text-lg mb-8 leading-relaxed">
-            Whether you're looking to strengthen your body after childbirth,
-            deepen your practice through teacher training, or simply find
-            balance in your daily life, we're here to support you.
+            {description}
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button className="bg-yoga-deep-purple hover:bg-yoga-deep-purple/90 text-white rounded-full px-8 py-6 text-base">
-              Schedule Your First Class
-            </Button>
-            <Button
-              variant="outline"
-              className="border-yoga-deep-purple text-yoga-deep-purple hover:bg-yoga-deep-purple/5 rounded-full px-8 py-6 text-base"
-            >
-              Explore Our Programs
+              {buttonText}
             </Button>
           </div>
         </div>
