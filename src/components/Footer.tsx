@@ -98,15 +98,6 @@ const Footer = () => {
                   Postpartum Fitness
                 </a>
               </li>
-
-              <li>
-                <a
-                  href="/postpatrum-fitness"
-                  className="text-yoga-charcoal/70 hover:text-yoga-deep-purple transition-colors"
-                >
-                  Daily Classes
-                </a>
-              </li>
             </ul>
           </div>
 
