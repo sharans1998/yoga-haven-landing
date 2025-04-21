@@ -137,7 +137,7 @@ const Footer = () => {
                   href="https://wa.me/919108700146"
                 >
                   <img
-                    src="https://res.cloudinary.com/dyb4kpthp/image/upload/v1745254602/logo_uxdzt4.svg"
+                    src="https://res.cloudinary.com/dyb4kpthp/image/upload/v1745254602/whatsapp_lp8bbr.svg"
                     alt="WhatsApp"
                     className="w-5 h-5 text-yoga-deep-purple"
                   />
