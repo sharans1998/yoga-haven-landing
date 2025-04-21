@@ -27,6 +27,8 @@ export function FormDialog({
   formId = "",
   source = "/",
 }: FormDialogProps) {
+  const [modalFormState, setModalFormState] = React.useState("");
+
   return (
     <Dialog>
       <DialogTrigger asChild>
@@ -34,25 +36,27 @@ export function FormDialog({
           {buttonText}
         </Button>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[600px] bg-yoga-lilac/95 backdrop-blur-md">
-        <DialogHeader>
-          <DialogTitle className="text-2xl md:text-3xl font-display font-medium text-yoga-charcoal leading-tight text-center">
-            {title && title.split(" ").length > 1 ? (
-              <>
-                {/* split the title such that only the last word gets the italics style. */}
-                {title.split(" ").slice(0, -1).join(" ")}{" "}
-                <span className="italic text-yoga-deep-purple">
-                  {title.split(" ").slice(-1)}
-                </span>
-              </>
-            ) : (
-              title
-            )}
-          </DialogTitle>
-          <DialogDescription className="text-yoga-charcoal/70 text-center">
-            {description}
-          </DialogDescription>
-        </DialogHeader>
+      <DialogContent className="sm:max-w-[600px] bg-yoga-lilac/95 backdrop-blur-md p-6 md:p-10">
+        {modalFormState !== "success" && (
+          <DialogHeader>
+            <DialogTitle className="text-2xl md:text-3xl font-display font-medium text-yoga-charcoal leading-tight text-center">
+              {title && title.split(" ").length > 1 ? (
+                <>
+                  {/* split the title such that only the last word gets the italics style. */}
+                  {title.split(" ").slice(0, -1).join(" ")}{" "}
+                  <span className="italic text-yoga-deep-purple">
+                    {title.split(" ").slice(-1)}
+                  </span>
+                </>
+              ) : (
+                title
+              )}
+            </DialogTitle>
+            <DialogDescription className="text-yoga-charcoal/70 text-center">
+              {description}
+            </DialogDescription>
+          </DialogHeader>
+        )}
         <NameEmailPhone
           submitText={submitText}
           formId={formId}
@@ -62,6 +66,7 @@ export function FormDialog({
           phoneFieldId="p98H"
           sourceFieldId="xAK2"
           extraFieldId="jmyG"
+          setModalFormState={setModalFormState}
         />
       </DialogContent>
     </Dialog>

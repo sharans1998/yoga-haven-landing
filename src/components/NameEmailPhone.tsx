@@ -15,6 +15,7 @@ function MyForm({
   phoneFieldId = "p98H",
   sourceFieldId = "xAK2",
   extraFieldId = "jmyG",
+  setModalFormState = () => {},
 }: {
   submitText?: string;
   formId?: string;
@@ -24,6 +25,7 @@ function MyForm({
   phoneFieldId?: string;
   sourceFieldId?: string;
   extraFieldId?: string;
+  setModalFormState?: (state: string) => void;
 }) {
   const {
     control,
@@ -91,6 +93,7 @@ function MyForm({
 
       if (response.ok) {
         setFormState(FORM_STATE.success);
+        setModalFormState("success");
         setTimeout(() => {
           setFormState(FORM_STATE.success);
         }, 2000);
@@ -252,7 +255,7 @@ function MyForm({
               <span className="italic text-yoga-deep-purple">Thank You</span>{" "}
               for Signing Up!
             </h1>
-            <div className="space-y-8 text-left">
+            <div className="space-y-8 text-left py-10">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-full bg-yoga-deep-purple/20 flex items-center justify-center flex-shrink-0">
                   <svg
