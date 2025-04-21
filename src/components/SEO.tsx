@@ -9,9 +9,9 @@ interface SEOProps {
 }
 
 export default function SEO({
-  title = "Yonitara Birth - Holistic Yoga & Wellness",
+  title = "Yonitara Birth - Empowering with Informed Choices",
   description = "Discover balance and wellness at Yonitara. Offering post-partum fitness, teacher training certification, and daily yoga classes.",
-  image = "/og-image.png",
+  image = "/logo.png",
   url = "https://yonitara.com",
   type = "website",
 }: SEOProps) {
