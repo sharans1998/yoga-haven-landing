@@ -61,7 +61,10 @@ const PostpartumFitnessAd = () => {
             created a proven formula that helped us heal, feel strong, and
             thrive - and now we&apos;re sharing it with you!
           </p>
-          <NameEmailPhone />
+
+          <div className="md:p-8 mx-auto max-w-md rounded-3xl p-10 bg-white/80 backdrop-blur-md shadow-sm border border-yoga-sand">
+            <NameEmailPhone />
+          </div>
           <p className="mt-4">
             <strong>👩🏻‍🍼 Led by New Moms & Experts:</strong> <br />
             🔥 Shruthi Jain - Marathoner, Pregnancy & Postpartum Trainer, Birth

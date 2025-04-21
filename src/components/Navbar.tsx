@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { FormDialog } from "./FormDialog";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -72,9 +72,13 @@ const Navbar = () => {
           >
             Postpartum Fitness
           </Link>
-          <Button className="bg-yoga-deep-purple hover:bg-yoga-deep-purple/90 text-white rounded-full px-6">
-            Book a Class
-          </Button>
+          <FormDialog
+            buttonText="Get in Touch"
+            title="Get in Touch"
+            description="Leave us your details and we'll get back to you shortly."
+            submitText="Submit"
+            formId="j4ndpvz5jyus"
+          />
         </nav>
 
         {/* Mobile menu button */}
@@ -129,12 +133,14 @@ const Navbar = () => {
           >
             Postpartum Fitness
           </Link>
-          <Button
-            className="bg-yoga-deep-purple hover:bg-yoga-deep-purple/90 text-white mt-4 rounded-full px-6 py-6 w-full"
-            onClick={() => setIsMobileMenuOpen(false)}
-          >
-            Get in Touch
-          </Button>
+          <FormDialog
+            buttonText="Get in Touch"
+            title="Get in Touch"
+            description="Leave us your details and we'll get back to you shortly."
+            submitText="Submit"
+            formId="j4ndpvz5jyus"
+            source={`navbar_get-in-touch_${window.location.href}`}
+          />
         </nav>
       </div>
     </header>

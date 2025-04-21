@@ -24,6 +24,8 @@ export default async function handler(req, res) {
         );
 
         if (!response.ok) {
+            const errorData = await response.json();
+            console.error('Error response from Fillout API:', errorData);
             throw new Error('Failed to submit form');
         }
 
