@@ -44,7 +44,7 @@ const Navbar = () => {
       <div className="flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2 text-yoga-charcoal">
           <img
-            src="/https://res.cloudinary.com/dyb4kpthp/image/upload/v1745254602/logo_uxdzt4.svg"
+            src="https://res.cloudinary.com/dyb4kpthp/image/upload/v1745254602/logo_uxdzt4.svg"
             alt="Yonitara Birth"
             className="h-8"
           />

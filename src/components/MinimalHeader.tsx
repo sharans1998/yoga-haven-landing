@@ -6,7 +6,7 @@ const MinimalHeader = () => {
       <div className="container mx-auto flex justify-center items-center">
         <Link to="/">
           <img
-            src="/https://res.cloudinary.com/dyb4kpthp/image/upload/v1745254602/logo_uxdzt4.svg"
+            src="https://res.cloudinary.com/dyb4kpthp/image/upload/v1745254602/logo_uxdzt4.svg"
             alt="Yonitara Birth"
             className="h-12"
           />
