@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { FormDialog } from "./FormDialog";
 
 const Hero = () => {
   const imageRef = useRef<HTMLDivElement>(null);
@@ -52,21 +53,16 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-slide-up">
-            <Button
-              className={cn(
-                "rounded-full text-white font-medium px-6 py-6",
-                "bg-yoga-deep-purple hover:bg-yoga-deep-purple/90 transition-all",
-                "text-base"
-              )}
-              role="link"
-              onClick={() => {
-                document
-                  .querySelector("#services")
-                  ?.scrollIntoView({ behavior: "smooth" });
-              }}
-            >
-              Explore Our Services
-            </Button>
+            <div className="md:hidden">
+              <FormDialog
+                buttonText="Get in Touch"
+                title="Get in Touch"
+                description="Leave us your details and we'll get back to you shortly."
+                submitText="Submit"
+                formId="j4ndpvz5jyus"
+                source={`home_hero_get-in-touch_${window.location.href}`}
+              />
+            </div>
             <Button
               variant="outline"
               className={cn(
@@ -74,8 +70,17 @@ const Hero = () => {
                 "hover:bg-yoga-deep-purple/5 hover:text-yoga-deep-purple",
                 "font-medium px-6 py-6 text-base"
               )}
+              onClick={() => {
+                const servicesSection = document.getElementById("services");
+                if (servicesSection) {
+                  servicesSection.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                  });
+                }
+              }}
             >
-              Book a Free Session
+              Explore Our Services
             </Button>
           </div>
         </div>

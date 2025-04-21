@@ -5,9 +5,11 @@ import { Button } from "@/components/ui/button";
 import CTA from "@/components/CTA";
 import { useToast } from "@/hooks/use-toast";
 import SEO from "@/components/SEO";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const About = () => {
   const { toast } = useToast();
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     // Scroll to top when component mounts
@@ -34,6 +36,11 @@ const About = () => {
     };
   }, [toast]);
 
+  const smallScreenBanner =
+    "https://res.cloudinary.com/dyb4kpthp/image/upload/q_auto/v1745245394/About_Us_Background_sxkaon.png";
+  const largeScreenBanner =
+    "https://res.cloudinary.com/dyb4kpthp/image/upload/q_auto/v1744820772/Shortlisted_pic_for_Website_1_c54cl9.jpg";
+
   return (
     <div className="min-h-screen bg-yoga-lilac">
       <SEO
@@ -49,8 +56,9 @@ const About = () => {
           <div
             className="absolute inset-0 w-full h-full bg-center bg-cover"
             style={{
-              backgroundImage:
-                'url("https://res.cloudinary.com/dyb4kpthp/image/upload/q_auto/v1744820772/Shortlisted_pic_for_Website_1_c54cl9.jpg")',
+              backgroundImage: `url(${
+                isMobile ? smallScreenBanner : largeScreenBanner
+              })`,
               backgroundPosition: "center center",
             }}
           >

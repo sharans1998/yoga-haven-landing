@@ -32,7 +32,7 @@ export function FormDialog({
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button className="bg-yoga-deep-purple hover:bg-yoga-deep-purple/90 text-white rounded-full px-8 py-6">
+        <Button className="bg-yoga-deep-purple hover:bg-yoga-deep-purple/90 text-white rounded-full px-8 py-6 text-base ">
           {buttonText}
         </Button>
       </DialogTrigger>

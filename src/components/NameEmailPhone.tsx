@@ -108,7 +108,6 @@ function MyForm({
   };
 
   const onSubmit = (data: FormData) => {
-    console.log(data);
     setFormState(FORM_STATE.loading);
 
     submitForm(data);
