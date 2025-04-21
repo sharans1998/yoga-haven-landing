@@ -17,7 +17,11 @@ const Footer = () => {
           {/* Brand */}
           <div className="md:col-span-1">
             <h3 className="text-2xl font-display font-medium text-yoga-charcoal mb-4">
-              <img src="/logo.svg" alt="Yonitara Birth" className="h-8" />
+              <img
+                src="/https://res.cloudinary.com/dyb4kpthp/image/upload/v1745254602/logo_uxdzt4.svg"
+                alt="Yonitara Birth"
+                className="h-8"
+              />
             </h3>
             <p className="text-yoga-charcoal/70 mb-6 leading-relaxed">
               Empowering with Informed Choices
@@ -133,7 +137,7 @@ const Footer = () => {
                   href="https://wa.me/919108700146"
                 >
                   <img
-                    src="/whatsapp.svg"
+                    src="/https://res.cloudinary.com/dyb4kpthp/image/upload/v1745254602/logo_uxdzt4.svg"
                     alt="WhatsApp"
                     className="w-5 h-5 text-yoga-deep-purple"
                   />

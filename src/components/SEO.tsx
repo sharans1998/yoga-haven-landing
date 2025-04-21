@@ -11,7 +11,7 @@ interface SEOProps {
 export default function SEO({
   title = "Yonitara Birth - Empowering with Informed Choices",
   description = "Discover balance and wellness at Yonitara. Offering post-partum fitness, teacher training certification, and daily yoga classes.",
-  image = "/logo.png",
+  image = "https://res.cloudinary.com/dyb4kpthp/image/upload/v1745254687/logo_ztvlzp.png",
   url = "https://yonitara.com",
   type = "website",
 }: SEOProps) {
