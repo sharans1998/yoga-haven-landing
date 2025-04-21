@@ -14,10 +14,12 @@ import TrainingCallback from "./pages/TrainingCallbackAd";
 import TrainingCallbackConfirm from "./pages/TrainingCallbackConfirmAd";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsAndConditions from "./pages/TermsAndConditions";
+import { injectSpeedInsights } from "@vercel/speed-insights";
 
 const queryClient = new QueryClient();
 
 const App = () => {
+  injectSpeedInsights();
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
