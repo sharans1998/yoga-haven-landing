@@ -9,9 +9,11 @@ import {
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import NameEmailPhone from "@/components/NameEmailPhone";
+import clsx from "clsx";
 
 interface FormDialogProps {
   buttonText?: string;
+  buttonVariant?: "default" | "secondary";
   title?: string;
   description?: string;
   submitText?: string;
@@ -21,6 +23,7 @@ interface FormDialogProps {
 
 export function FormDialog({
   buttonText = "Register Now",
+  buttonVariant = "default",
   title = "Register for the Workshop",
   description = "Fill in your details below and we'll get back to you shortly.",
   submitText = "Submit",
@@ -32,7 +35,14 @@ export function FormDialog({
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button className="bg-yoga-deep-purple hover:bg-yoga-deep-purple/90 text-white rounded-full px-8 py-6 text-base ">
+        <Button
+          className={clsx(
+            buttonVariant === "secondary" &&
+              "bg-transparent text-yoga-deep-purple text-left hover:bg-yoga-deep-purple/5 justify-start",
+            buttonVariant === "default" &&
+              "bg-yoga-deep-purple hover:bg-yoga-deep-purple/90 text-white px-8 py-6 text-base rounded-full "
+          )}
+        >
           {buttonText}
         </Button>
       </DialogTrigger>

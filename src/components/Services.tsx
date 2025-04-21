@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { FormDialog } from "./FormDialog";
 
 const ServiceCard = ({
   title,
@@ -17,6 +18,7 @@ const ServiceCard = ({
   delay,
   colorClass,
   link,
+  popUpModal = false,
 }: {
   title: string;
   description: string;
@@ -24,6 +26,7 @@ const ServiceCard = ({
   delay: number;
   colorClass: string;
   link?: string;
+  popUpModal?: boolean;
 }) => {
   const cardRef = useRef<HTMLDivElement>(null);
 
@@ -72,15 +75,26 @@ const ServiceCard = ({
       <p className="text-yoga-charcoal/70 mb-6 leading-relaxed">
         {description}
       </p>
-
-      <a
-        href={link ? link : "#"}
-        className="w-full mt-auto hover:bg-yoga-deep-purple/5  hover:text-yoga-deep-purple px-0 py-0 rounded-md"
-      >
-        <Button className="bg-transparent text-yoga-deep-purple hover:bg-transparent">
-          Learn more →
-        </Button>
-      </a>
+      {popUpModal ? (
+        <FormDialog
+          buttonText="Learn more →"
+          buttonVariant="secondary"
+          title="Explore Regular Yoga & Lifestyle Sessions"
+          description="Leave us your details and we'll get back to you shortly."
+          submitText="Submit"
+          formId="j4ndpvz5jyus"
+          source={`services_regular-yoga_${window.location.href}`}
+        />
+      ) : (
+        <a
+          href={link ? link : "#"}
+          className="w-full mt-auto hover:bg-yoga-deep-purple/5  hover:text-yoga-deep-purple px-0 py-0 rounded-md"
+        >
+          <Button className="bg-transparent text-yoga-deep-purple hover:bg-transparent">
+            Learn more →
+          </Button>
+        </a>
+      )}
     </div>
   );
 };
@@ -157,6 +171,7 @@ const Services = () => {
             icon={CalendarClock}
             delay={3}
             colorClass="bg-yoga-deep-purple/80"
+            popUpModal={true}
           />
         </div>
       </div>
