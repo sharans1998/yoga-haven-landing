@@ -63,7 +63,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="/about-us"
+                  href="/about"
                   className="text-yoga-charcoal/70 hover:text-yoga-deep-purple transition-colors"
                 >
                   About Us
