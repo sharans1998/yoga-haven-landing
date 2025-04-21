@@ -181,7 +181,7 @@ const PostpartumFitness = () => {
                   </div>
                   <div className="absolute -top-4 -left-4 w-24 h-24 md:w-32 md:h-32 bg-yoga-clay/50 rounded-2xl -z-10"></div>
                 </div> */}
-                <div className="absolute w-5/6 h-5/6 z-10 image-reveal image-reveal-delay-1">
+                <div className="absolute w-full h-full z-10 image-reveal image-reveal-delay-1">
                   <div className="w-full h-full overflow-hidden rounded-2xl">
                     <img
                       src="https://res.cloudinary.com/dyb4kpthp/image/upload/v1744820832/Shortlisted_pic_for_Website_diz7pd.jpg"
@@ -222,7 +222,7 @@ const PostpartumFitness = () => {
                   </div>
                   <div className="absolute -top-4 -left-4 w-24 h-24 md:w-32 md:h-32 bg-yoga-clay/50 rounded-2xl -z-10"></div>
                 </div> */}
-                <div className="absolute w-5/6 h-5/6 z-10 image-reveal image-reveal-delay-1">
+                <div className="absolute w-full h-full z-10 image-reveal image-reveal-delay-1">
                   <div className="w-full h-full overflow-hidden rounded-2xl">
                     <img
                       src="https://res.cloudinary.com/dyb4kpthp/image/upload/v1744820832/Shortlisted_Pic_for_Website_3_y1epn4.jpg"
