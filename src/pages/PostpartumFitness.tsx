@@ -184,7 +184,7 @@ const PostpartumFitness = () => {
                 <div className="absolute w-full h-full z-10 image-reveal image-reveal-delay-1">
                   <div className="w-full h-full overflow-hidden rounded-2xl">
                     <img
-                      src="https://res.cloudinary.com/dyb4kpthp/image/upload/v1744820832/Shortlisted_pic_for_Website_diz7pd.jpg"
+                      src="https://res.cloudinary.com/dyb4kpthp/image/upload/v1745244956/WhatsApp_Image_2025-04-18_at_17.31.58_1_j1tto6.jpg"
                       alt="Yoga teacher training session"
                       className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                     />
@@ -225,7 +225,7 @@ const PostpartumFitness = () => {
                 <div className="absolute w-full h-full z-10 image-reveal image-reveal-delay-1">
                   <div className="w-full h-full overflow-hidden rounded-2xl">
                     <img
-                      src="https://res.cloudinary.com/dyb4kpthp/image/upload/v1744820832/Shortlisted_Pic_for_Website_3_y1epn4.jpg"
+                      src="https://res.cloudinary.com/dyb4kpthp/image/upload/v1740576966/HEIC_to_WEBP_Shruthi_Tanvi_yjhoin.webp"
                       alt="Yoga teacher training session"
                       className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                     />
