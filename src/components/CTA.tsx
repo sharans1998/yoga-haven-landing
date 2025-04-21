@@ -1,11 +1,11 @@
 import React, { useRef, useEffect } from "react";
-import { Button } from "@/components/ui/button";
+import { FormDialog } from "./FormDialog";
 
 const CTA = ({
   titlePre = "Begin Your PeriNatal Expert Journey",
   titleItalics = "Today",
   titlePost = "",
-  description = "Whether you're looking to become a premium perinatal expert, have a holistic understanding of pregnancy and postpartum or broaden your skill set, we're here to support you.",
+  description = "Whether you're looking to become a premium perinatal expert, have a holistic understanding of pregnancy and postpartum or want to broaden your skill set, we're here to support you.",
   buttonText = "Book a Call",
 }) => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -54,10 +54,15 @@ const CTA = ({
             {description}
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="bg-yoga-deep-purple hover:bg-yoga-deep-purple/90 text-white rounded-full px-8 py-6 text-base">
-              {buttonText}
-            </Button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center text-base">
+            <FormDialog
+              buttonText={buttonText}
+              title={buttonText}
+              description="Leave us your details and we'll get back to you shortly."
+              submitText="Submit"
+              formId="j4ndpvz5jyus"
+              source={`cta_book-a-call_${window.location.href}`}
+            />
           </div>
         </div>
       </div>

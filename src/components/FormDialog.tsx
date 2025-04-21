@@ -40,7 +40,7 @@ export function FormDialog({
             buttonVariant === "secondary" &&
               "bg-transparent text-yoga-deep-purple text-left hover:bg-yoga-deep-purple/5 justify-start",
             buttonVariant === "default" &&
-              "bg-yoga-deep-purple hover:bg-yoga-deep-purple/90 text-white px-8 py-6 text-base rounded-full "
+              "bg-yoga-deep-purple hover:bg-yoga-deep-purple/90 text-white px-8 py-6 text-base rounded-full"
           )}
         >
           {buttonText}
