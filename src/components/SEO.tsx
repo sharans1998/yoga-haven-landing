@@ -9,15 +9,15 @@ interface SEOProps {
 }
 
 export default function SEO({
-  title = "YoniTara Birth - Holistic Yoga & Wellness",
+  title = "Yonitara Birth - Holistic Yoga & Wellness",
   description = "Discover balance and wellness at Yonitara. Offering post-partum fitness, teacher training certification, and daily yoga classes.",
   image = "/og-image.png",
   url = "https://yonitara.com",
   type = "website",
 }: SEOProps) {
-  const siteTitle = title.includes("YoniTara Birth")
+  const siteTitle = title.includes("Yonitara Birth")
     ? title
-    : `${title} | YoniTara Birth`;
+    : `${title} | Yonitara Birth`;
 
   return (
     <Helmet>

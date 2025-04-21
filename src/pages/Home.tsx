@@ -55,7 +55,7 @@ const Home = () => {
               </h2>
 
               <p className="text-yoga-charcoal/80 text-lg mb-8 leading-relaxed">
-                At YoniTara Birth, we empower women through a holistic approach
+                At Yonitara Birth, we empower women through a holistic approach
                 to health and wellness. We believe in the natural power of a
                 woman’s body to heal and thrive with the right support.
               </p>
