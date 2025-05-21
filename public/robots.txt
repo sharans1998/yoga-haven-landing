@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Sitemap: https://yonitara.com/sitemap.xml
+
+# Disallow any temporary files or directories
+Disallow: /tmp/
+Disallow: *.tmp$
+Disallow: /private/
