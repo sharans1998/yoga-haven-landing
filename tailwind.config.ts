@@ -36,11 +36,6 @@ export default {
 					'forest': '#6F7B63',
 					'clay': '#9D8E7E',
 					'charcoal': '#3A3A3A',
-
-
-
-
-
 					'purple': '#9738c6',     // Your logo color
 					'lavender': '#d4b6e5',   // Lighter shade of purple
 					'lilac': '#f2ebf7',      // Very light purple for backgrounds
