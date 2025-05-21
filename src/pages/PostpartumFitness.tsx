@@ -6,15 +6,13 @@ import CTA from "@/components/CTA";
 import { useToast } from "@/hooks/use-toast";
 import {
   CheckCircle2,
-  Heart,
   LocateFixed,
   PersonStanding,
-  ShieldCheck,
   Speech,
   Timer,
-  Users,
   Waves,
 } from "lucide-react";
+import SEO from "@/components/SEO";
 
 const PostpartumFitness = () => {
   const { toast } = useToast();
@@ -46,6 +44,12 @@ const PostpartumFitness = () => {
 
   return (
     <div className="min-h-screen bg-yoga-lilac">
+      <SEO
+        title="Yonitara Birth - Postpartum Fitness"
+        description="Discover our Postpartum Fitness Program designed to support your recovery after childbirth. Join us for a holistic approach to postpartum healing."
+        url="https://yonitara.com/postpartum-fitness"
+        image="https://res.cloudinary.com/dyb4kpthp/image/upload/v1747830601/Yonitara-_Abhyasa.png"
+      />
       <Navbar />
       <main>
         {/* Banner Section */}

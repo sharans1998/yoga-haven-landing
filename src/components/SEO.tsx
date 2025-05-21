@@ -6,14 +6,16 @@ interface SEOProps {
   image?: string;
   url?: string;
   type?: string;
+  keywords?: string;
 }
 
 export default function SEO({
   title = "Yonitara Birth - Empowering with Informed Choices",
   description = "Discover balance and wellness at Yonitara. Offering post-partum fitness, teacher training certification, and daily yoga classes.",
-  image = "https://res.cloudinary.com/dyb4kpthp/image/upload/v1745254687/logo_ztvlzp.png",
+  image = "https://res.cloudinary.com/dyb4kpthp/image/upload/v1747830601/Yonitara-Home.png",
   url = "https://yonitara.com",
   type = "website",
+  keywords = "yoga, wellness, fitness, postpartum, teacher training, yoga classes",
 }: SEOProps) {
   const siteTitle = title.includes("Yonitara Birth")
     ? title
@@ -24,6 +26,8 @@ export default function SEO({
       {/* Standard metadata */}
       <title>{siteTitle}</title>
       <meta name="description" content={description} />
+      <meta name="keywords" content={keywords} />
+      <meta name="author" content="Yonitara Birth" />
 
       {/* Open Graph / Facebook */}
       <meta property="og:type" content={type} />

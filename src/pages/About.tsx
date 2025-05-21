@@ -44,9 +44,10 @@ const About = () => {
   return (
     <div className="min-h-screen bg-yoga-lilac">
       <SEO
-        title="About Us"
-        description="Learn about Yonitara Birth's mission to empower women through holistic yoga and wellness practices. Discover our evidence-based approach to women's health."
-        type="article"
+        title="Yonitara Birth - About Us"
+        description="Learn about Yonitara Birth's mission to empower women through holistic yoga and wellness practices. Discover the passionate minds behind Yonitara Yoga Institute, bringing years of combined experience and a shared vision."
+        image="https://res.cloudinary.com/dyb4kpthp/image/upload/v1747830601/Yonitara-_About.png"
+        url="https://yonitara.com/about"
       />
       <Navbar />
       <main>

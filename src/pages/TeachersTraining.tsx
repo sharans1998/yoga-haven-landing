@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import CTA from "@/components/CTA";
 import { useToast } from "@/hooks/use-toast";
 import { CheckCircle2, Baby, LucideAxis3D, Leaf } from "lucide-react";
+import SEO from "@/components/SEO";
 
 const TeachersTraining = () => {
   const { toast } = useToast();
@@ -36,6 +37,13 @@ const TeachersTraining = () => {
 
   return (
     <div className="min-h-screen bg-yoga-lilac">
+      <SEO
+        title="Yonitara Birth - Teachers Training"
+        description="Join our comprehensive Pre & Postnatal Yoga Teacher Training Certification. Become an expert in prenatal & postnatal yoga, childbirth education, Ayurveda, and Garbha Sanskar!"
+        url="https://yonitara.com/teachers-training"
+        image="https://res.cloudinary.com/dyb4kpthp/image/upload/v1747830601/Yonitara-_TTC.png"
+        keywords="Yoga, Pre & Postnatal Yoga, Teacher Training, Certification, Childbirth Education, Ayurveda, Garbha Sanskar"
+      />
       <Navbar />
       <main>
         {/* Banner Section */}
