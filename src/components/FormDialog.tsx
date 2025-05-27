@@ -74,7 +74,6 @@ export function FormDialog({
             <DialogDescription className="text-yoga-charcoal/70 text-center">
               {description}
             </DialogDescription>
-            {source}
           </DialogHeader>
         )}
         <NameEmailPhone

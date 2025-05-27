@@ -28,6 +28,12 @@ export default function SEO({
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
       <meta name="author" content="Yonitara Birth" />
+      <meta name="robots" content="index, follow" />
+      <meta name="language" content="English" />
+      <meta name="revisit-after" content="7 days" />
+
+      {/* Canonical URL */}
+      <link rel="canonical" href={url} />
 
       {/* Open Graph / Facebook */}
       <meta property="og:type" content={type} />
@@ -38,6 +44,8 @@ export default function SEO({
       <meta property="og:image:alt" content={description} />
       <meta property="og:image:width" content="940" />
       <meta property="og:image:height" content="630" />
+      <meta property="og:site_name" content="Yonitara Birth" />
+      <meta property="og:locale" content="en_US" />
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
@@ -45,6 +53,11 @@ export default function SEO({
       <meta name="twitter:title" content={siteTitle} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
+      <meta name="twitter:image:alt" content={description} />
+
+      {/* Additional SEO tags */}
+      <meta name="theme-color" content="#8B5CF6" />
+      <meta name="msapplication-TileColor" content="#8B5CF6" />
     </Helmet>
   );
 }
