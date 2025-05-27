@@ -6,6 +6,7 @@ import CTA from "@/components/CTA";
 import { useToast } from "@/hooks/use-toast";
 import { CheckCircle2, Baby, LucideAxis3D, Leaf } from "lucide-react";
 import SEO from "@/components/SEO";
+import { FormDialog } from "@/components/FormDialog";
 
 const TeachersTraining = () => {
   const { toast } = useToast();
@@ -88,12 +89,15 @@ const TeachersTraining = () => {
                 {/* <Button className="rounded-full text-white font-medium px-6 py-6 bg-yoga-deep-purple hover:bg-yoga-deep-purple/90 transition-all text-base">
                   Apply Now
                 </Button> */}
-                <Button
-                  variant="outline"
-                  className="rounded-full border-yoga-deep-purple text-yoga-deep-purple hover:bg-yoga-deep-purple/5 hover:text-yoga-deep-purple font-medium px-6 py-6 text-base"
-                >
-                  Book a Call
-                </Button>
+                <FormDialog
+                  buttonVariant="secondary"
+                  buttonText="Book a Call"
+                  title="Book a Call"
+                  description="Leave us your details and we'll get back to you shortly."
+                  submitText="Submit"
+                  formId="j4ndpvz5jyus"
+                  source={`hero_book-a-call_${window.location.pathname}`}
+                />
               </div>
             </div>
           </div>

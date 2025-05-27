@@ -83,7 +83,7 @@ const ServiceCard = ({
           description="Leave us your details and we'll get back to you shortly."
           submitText="Submit"
           formId="j4ndpvz5jyus"
-          source={`services_regular-yoga_${window.location.href}`}
+          source={`services_regular-yoga_${window.location.pathname}`}
         />
       ) : (
         <a

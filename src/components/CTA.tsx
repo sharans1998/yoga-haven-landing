@@ -61,7 +61,7 @@ const CTA = ({
               description="Leave us your details and we'll get back to you shortly."
               submitText="Submit"
               formId="j4ndpvz5jyus"
-              source={`cta_book-a-call_${window.location.href}`}
+              source={`cta_book-a-call_${window.location.pathname}`}
             />
           </div>
         </div>

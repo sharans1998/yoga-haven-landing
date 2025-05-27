@@ -13,6 +13,7 @@ import {
   Waves,
 } from "lucide-react";
 import SEO from "@/components/SEO";
+import { FormDialog } from "@/components/FormDialog";
 
 const PostpartumFitness = () => {
   const { toast } = useToast();
@@ -81,15 +82,15 @@ const PostpartumFitness = () => {
               </p>
 
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-slide-up">
-                <Button className="rounded-full text-white font-medium px-6 py-6 bg-yoga-deep-purple hover:bg-yoga-deep-purple/90 transition-all text-base">
-                  Join Our Program
-                </Button>
-                <Button
-                  variant="outline"
-                  className="rounded-full border-yoga-deep-purple text-yoga-deep-purple hover:bg-yoga-deep-purple/5 hover:text-yoga-deep-purple font-medium px-6 py-6 text-base"
-                >
-                  Schedule a Consultation
-                </Button>
+                <FormDialog
+                  buttonVariant="secondary"
+                  buttonText="Join Our Program"
+                  title="Join Our Program"
+                  description="Leave us your details and we'll get back to you shortly."
+                  submitText="Submit"
+                  formId="j4ndpvz5jyus"
+                  source={`hero_join-our-program_${window.location.pathname}`}
+                />
               </div>
             </div>
           </div>
