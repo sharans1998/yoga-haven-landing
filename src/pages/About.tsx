@@ -266,19 +266,34 @@ const About = () => {
                     Pankhuree
                   </h3>
                   <p className="text-yoga-deep-purple mb-4">
-                    Yoga & Fitness Coach
+                    Yoga & Fitness Coach <br />
+                    Women's Holistic Wellness Expert
                   </p>
                   <p className="text-yoga-charcoal/70 mb-6 leading-relaxed">
-                    A passionate yoga and fitness coach, Pankhuree specializes
-                    in pre and postnatal yoga. Certified in craniosacral
-                    therapy, Bach flower remedies, yoga therapy, and Ayurveda,
-                    she offers a holistic approach to well-being. As the former
-                    Head of Yoga and Innovation at iMumz, a Shark Tank-featured
-                    startup, she has empowered over 10,000 expecting mothers
-                    through personalized care and guidance. Her goal is to
-                    enhance fertility, support healthy pregnancies, and aid in
-                    postpartum recovery by helping women tap into their inner
-                    strength and wisdom.
+                    Pankhuree is a deeply passionate yoga and fitness coach who
+                    brings a multi-dimensional, holistic approach to women’s
+                    health. With extensive expertise in pre and postnatal yoga,
+                    she is also certified in craniosacral therapy, Bach flower
+                    remedies, yoga therapy, and Ayurvedic lifestyle coaching,
+                    allowing her to support women through every stage of their
+                    reproductive journey—naturally and compassionately.
+                  </p>
+                  <p className="text-yoga-charcoal/70 mb-6 leading-relaxed">
+                    As the former Head of Yoga and Innovation at iMumz—a Shark
+                    Tank India-featured health tech platform serving over
+                    200,000 mothers—Pankhuree led a team of 25+ wellness experts
+                    and personally supported over 10,000 expecting mothers. Her
+                    work combined traditional practices with cutting-edge
+                    wellness solutions, bridging ancient wisdom with modern-day
+                    motherhood challenges.
+                  </p>
+                  <p className="text-yoga-charcoal/70 mb-6 leading-relaxed">
+                    Her mission is to help women enhance fertility, experience
+                    empowered pregnancies, and heal fully postpartum—not just
+                    physically, but emotionally and energetically. Through her
+                    practice, she guides women to reconnect with their inner
+                    strength, intuition, and womb wisdom, creating space for
+                    true transformation in the motherhood journey.
                   </p>
                   <div className="gap-4 hidden">
                     <Button
