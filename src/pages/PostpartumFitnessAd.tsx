@@ -63,7 +63,17 @@ const PostpartumFitnessAd = () => {
           </p>
 
           <div className="md:p-8 mx-auto max-w-md rounded-3xl p-10 bg-white/80 backdrop-blur-md shadow-sm border border-yoga-sand">
-            <NameEmailPhone />
+            <NameEmailPhone
+              submitText={"Submit"}
+              formId={"j4ndpvz5jyus"}
+              source={`postpartum_fitness_ad_${window.location.pathname}`}
+              nameFieldId="bWMU"
+              emailFieldId="2mSw"
+              phoneFieldId="p98H"
+              sourceFieldId="xAK2"
+              extraFieldId="jmyG"
+              // setModalFormState={setModalFormState}
+            />
           </div>
           <p className="mt-4">
             <strong>👩🏻‍🍼 Led by New Moms & Experts:</strong> <br />
