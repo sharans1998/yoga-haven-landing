@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { useEffect } from "react";
 
 interface SEOProps {
   title?: string;
@@ -20,6 +21,11 @@ export default function SEO({
   const siteTitle = title.includes("Yonitara Birth")
     ? title
     : `${title} | Yonitara Birth`;
+
+  // Debug logging
+  useEffect(() => {
+    console.log("SEO component mounted with:", { siteTitle, description, url });
+  }, [siteTitle, description, url]);
 
   return (
     <Helmet prioritizeSeoTags>
