@@ -22,9 +22,15 @@ export default function SEO({
     ? title
     : `${title} | Yonitara Birth`;
 
-  // Debug logging
+  // Debug logging only in development
   useEffect(() => {
-    console.log("SEO component mounted with:", { siteTitle, description, url });
+    if (process.env.NODE_ENV === "development") {
+      console.log("SEO component mounted with:", {
+        siteTitle,
+        description,
+        url,
+      });
+    }
   }, [siteTitle, description, url]);
 
   return (
