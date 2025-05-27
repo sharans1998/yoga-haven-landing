@@ -22,7 +22,7 @@ export default function SEO({
     : `${title} | Yonitara Birth`;
 
   return (
-    <Helmet>
+    <Helmet prioritizeSeoTags>
       {/* Standard metadata */}
       <title>{siteTitle}</title>
       <meta name="description" content={description} />
