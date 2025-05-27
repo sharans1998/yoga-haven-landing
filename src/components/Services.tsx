@@ -78,7 +78,7 @@ const ServiceCard = ({
       {popUpModal ? (
         <FormDialog
           buttonText="Learn more →"
-          buttonVariant="secondary"
+          buttonVariant="tertiary"
           title="Explore Regular Yoga & Lifestyle Sessions"
           description="Leave us your details and we'll get back to you shortly."
           submitText="Submit"

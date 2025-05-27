@@ -13,7 +13,7 @@ import clsx from "clsx";
 
 interface FormDialogProps {
   buttonText?: string;
-  buttonVariant?: "default" | "secondary";
+  buttonVariant?: "default" | "secondary" | "tertiary";
   title?: string;
   description?: string;
   submitText?: string;
@@ -36,12 +36,20 @@ export function FormDialog({
     <Dialog>
       <DialogTrigger asChild>
         <Button
-          variant={buttonVariant === "secondary" ? "outline" : "default"}
+          variant={
+            buttonVariant === "secondary"
+              ? "outline"
+              : buttonVariant === "tertiary"
+              ? "link"
+              : "default"
+          }
           className={clsx(
             buttonVariant === "secondary" &&
               "rounded-full border-yoga-deep-purple text-yoga-deep-purple hover:bg-yoga-deep-purple/5 hover:text-yoga-deep-purple font-medium px-6 py-6 text-base",
             buttonVariant === "default" &&
-              "bg-yoga-deep-purple hover:bg-yoga-deep-purple/90 text-white px-8 py-6 text-base rounded-full"
+              "bg-yoga-deep-purple hover:bg-yoga-deep-purple/90 text-white px-8 py-6 text-base rounded-full",
+            buttonVariant === "tertiary" &&
+              "w-full mt-auto hover:bg-yoga-deep-purple/5  text-yoga-deep-purple px-0 py-0 rounded-md hover:no-underline justify-start pl-4"
           )}
         >
           {buttonText}
