@@ -85,7 +85,7 @@ const About = () => {
 
               <Button
                 className="rounded-full text-yoga-charcoal font-medium px-6 py-6 
-                bg-yoga-lilac hover:bg-yoga-lilac/90 transition-all text-base animate-fade-in"
+                bg-yoga-lilac hover:bg-yoga-lilac/90 transition-all text-base animate-fade-in md:mt-32"
                 onClick={() => {
                   // scroll to the mission section
                   const missionSection =
@@ -207,20 +207,40 @@ const About = () => {
                     Shruthi Jain
                   </h3>
                   <p className="text-yoga-deep-purple mb-4">
-                    Pre & Postnatal Yoga Expert
+                    MSc in Yoga Therapy (S-VYASA University) <br />
+                    RYT 500 | RPYT | Childbirth Educator
+                    <br />
+                    UESCA Certified Running Coach
                   </p>
                   <p className="text-yoga-charcoal/70 mb-6 leading-relaxed">
-                    A leader in yoga therapy, Shruthi holds an MSc in Yoga
-                    Therapy from{" "}
-                    <span className="whitespace-nowrap">S-VYASA</span>{" "}
-                    University and is a registered RYT 500 and RPYT. With over a
-                    decade of experience, Shruthi has transformed the lives of
-                    pregnant women through holistic wellness. An accomplished
-                    marathon runner, she continues to inspire others with her
-                    achievements, including completing races while pregnant.
-                    Shruthi has led yoga workshops for major corporations like
-                    Capgemini, WeWork, and H&M, leaving a lasting impact on
-                    corporate wellness.
+                    Shruthi Jain is a yoga therapist, childbirth educator, and
+                    co-founder of YoniTara Birth, India’s only 100% online yoga
+                    school for women’s health. With over 10,000 hours of
+                    teaching experience, she has trained thousands of women
+                    through pregnancy and postpartum, combining traditional yoga
+                    with evidence-based practices. She also leads prenatal
+                    retreats, helping women connect deeply with their bodies
+                    during this transformative time.
+                  </p>
+                  <p className="text-yoga-charcoal/70 mb-6 leading-relaxed">
+                    Holding an MSc in Yoga Therapy, Shruthi specializes in
+                    pre/postnatal yoga, gynecological wellness, and teacher
+                    training. Her classes emphasize strength, breath, and
+                    self-trust—supporting women across all life stages.
+                  </p>
+                  <p className="text-yoga-charcoal/70 mb-6 leading-relaxed">
+                    A passionate runner since age 16, Shruthi has earned
+                    multiple podium finishes in major races like the TCS World
+                    10K and Bengaluru Marathon, even running competitively
+                    during pregnancy and postpartum. Her journey is a unique
+                    blend of endurance and intuitive, mindful movement.
+                  </p>
+                  <p className="text-yoga-charcoal/70 mb-6 leading-relaxed">
+                    Shruthi has conducted workshops for Capgemini, H&M, WeWork,
+                    and New York Road Runners, and her work has been featured in
+                    Bangalore Times and Rajasthan Patrika. Whether leading a
+                    yoga class or pacing a runner, Shruthi helps women reclaim
+                    their strength—inside and out.
                   </p>
                   <div className="gap-4 hidden">
                     <Button
