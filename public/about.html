@@ -45,9 +45,31 @@
     
     <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     
-    <!-- Redirect to main app -->
+    <!-- Crawler detection and redirect logic -->
     <script>
-      window.location.href = '/about';
+      // Check if this is a social media crawler
+      function isCrawler() {
+        const userAgent = navigator.userAgent.toLowerCase();
+        const crawlers = [
+          'facebookexternalhit',
+          'twitterbot',
+          'linkedinbot',
+          'slackbot',
+          'whatsapp',
+          'telegrambot',
+          'discordbot',
+          'skypeuripreview',
+          'googlebot',
+          'bingbot',
+          'applebot'
+        ];
+        return crawlers.some(crawler => userAgent.includes(crawler));
+      }
+
+      // If not a crawler, redirect to the SPA
+      if (!isCrawler()) {
+        window.location.href = '/about';
+      }
     </script>
   </head>
 

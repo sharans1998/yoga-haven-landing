@@ -1,6 +1,22 @@
 {
   "rewrites": [
     {
+      "source": "/teachers-training",
+      "destination": "/teachers-training.html"
+    },
+    {
+      "source": "/postpartum-fitness",
+      "destination": "/postpartum-fitness.html"
+    },
+    {
+      "source": "/postpartum",
+      "destination": "/postpartum-fitness.html"
+    },
+    {
+      "source": "/about",
+      "destination": "/about.html"
+    },
+    {
       "source": "/(.*)",
       "destination": "/index.html"
     }
