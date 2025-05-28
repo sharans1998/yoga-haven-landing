@@ -30,7 +30,6 @@ export default function SEO({
       <meta name="author" content="Yonitara Birth" />
       <meta name="robots" content="index, follow" />
       <meta name="language" content="English" />
-      <meta name="revisit-after" content="7 days" />
 
       {/* Canonical URL */}
       <link rel="canonical" href={url} />
