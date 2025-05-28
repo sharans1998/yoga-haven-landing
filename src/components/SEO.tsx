@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { useEffect } from "react";
 
 interface SEOProps {
   title?: string;
@@ -20,6 +21,41 @@ export default function SEO({
   const siteTitle = title.includes("Yonitara Birth")
     ? title
     : `${title} | Yonitara Birth`;
+
+  // Ensure meta tags are immediately available for crawlers
+  useEffect(() => {
+    // Update document title immediately for crawlers
+    document.title = siteTitle;
+
+    // Ensure meta description is set
+    let metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute("content", description);
+    }
+
+    // Ensure OG tags are set
+    let ogTitle = document.querySelector('meta[property="og:title"]');
+    if (ogTitle) {
+      ogTitle.setAttribute("content", siteTitle);
+    }
+
+    let ogDescription = document.querySelector(
+      'meta[property="og:description"]'
+    );
+    if (ogDescription) {
+      ogDescription.setAttribute("content", description);
+    }
+
+    let ogImage = document.querySelector('meta[property="og:image"]');
+    if (ogImage) {
+      ogImage.setAttribute("content", image);
+    }
+
+    let ogUrl = document.querySelector('meta[property="og:url"]');
+    if (ogUrl) {
+      ogUrl.setAttribute("content", url);
+    }
+  }, [siteTitle, description, image, url]);
 
   return (
     <Helmet>
@@ -57,6 +93,30 @@ export default function SEO({
       {/* Additional SEO tags */}
       <meta name="theme-color" content="#8B5CF6" />
       <meta name="msapplication-TileColor" content="#8B5CF6" />
+
+      {/* Structured Data for better SEO */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          name: "Yonitara Birth",
+          description: description,
+          url: url,
+          logo: "https://res.cloudinary.com/dyb4kpthp/image/upload/v1745254602/logo_uxdzt4.svg",
+          image: image,
+          sameAs: [
+            "https://www.instagram.com/yonitara.birth",
+            "https://www.facebook.com/YoniTara.birth",
+            "https://youtube.com/@yonitarabirth",
+          ],
+          contactPoint: {
+            "@type": "ContactPoint",
+            telephone: "+919108700146",
+            contactType: "customer service",
+            email: "yonitara.birth@gmail.com",
+          },
+        })}
+      </script>
     </Helmet>
   );
 }
