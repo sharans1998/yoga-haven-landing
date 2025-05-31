@@ -5,11 +5,7 @@ const MinimalHeader = () => {
     <header className="w-full py-4 shadow-yoga-lavender shadow-sm">
       <div className="container mx-auto flex justify-center items-center">
         <Link to="/">
-          <img
-            src="https://res.cloudinary.com/dyb4kpthp/image/upload/v1745254602/logo_uxdzt4.svg"
-            alt="Yonitara Birth"
-            className="h-12"
-          />
+          <img src="/Logo.svg" alt="Yonitara Birth" className="h-12" />
         </Link>
       </div>
     </header>

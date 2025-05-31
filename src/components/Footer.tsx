@@ -17,11 +17,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="md:col-span-1">
             <h3 className="text-2xl font-display font-medium text-yoga-charcoal mb-4">
-              <img
-                src="https://res.cloudinary.com/dyb4kpthp/image/upload/v1745254602/logo_uxdzt4.svg"
-                alt="Yonitara Birth"
-                className="h-8"
-              />
+              <img src="/Logo.svg" alt="Yonitara Birth" className="h-8" />
             </h3>
             <p className="text-yoga-charcoal/70 mb-6 leading-relaxed">
               Empowering with Informed Choices
