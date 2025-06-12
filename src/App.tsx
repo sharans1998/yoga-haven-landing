@@ -15,7 +15,6 @@ import TrainingCallbackConfirm from "./pages/TrainingCallbackConfirmAd";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsAndConditions from "./pages/TermsAndConditions";
 import { injectSpeedInsights } from "@vercel/speed-insights";
-import { Analytics } from "@vercel/analytics/next";
 
 const queryClient = new QueryClient();
 
@@ -23,7 +22,6 @@ const App = () => {
   injectSpeedInsights();
   return (
     <QueryClientProvider client={queryClient}>
-      <Analytics />
       <TooltipProvider>
         <Toaster />
         <Sonner />
