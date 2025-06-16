@@ -6,13 +6,7 @@
       "headers": {
         "X-Robots-Tag": "index, follow"
       },
-      "has": [
-        {
-          "type": "header",
-          "key": "user-agent",
-          "value": ".*bot.*"
-        }
-      ]
+      "continue": true
     },
     {
       "src": "/postpartum-fitness",
@@ -20,13 +14,7 @@
       "headers": {
         "X-Robots-Tag": "index, follow"
       },
-      "has": [
-        {
-          "type": "header",
-          "key": "user-agent",
-          "value": ".*bot.*"
-        }
-      ]
+      "continue": true
     },
     {
       "src": "/postpartum",
@@ -34,13 +22,7 @@
       "headers": {
         "X-Robots-Tag": "index, follow"
       },
-      "has": [
-        {
-          "type": "header",
-          "key": "user-agent",
-          "value": ".*bot.*"
-        }
-      ]
+      "continue": true
     },
     {
       "src": "/about",
@@ -48,13 +30,7 @@
       "headers": {
         "X-Robots-Tag": "index, follow"
       },
-      "has": [
-        {
-          "type": "header",
-          "key": "user-agent",
-          "value": ".*bot.*"
-        }
-      ]
+      "continue": true
     },
     {
       "src": "/teachers-training.html",
@@ -81,28 +57,25 @@
       "handle": "filesystem"
     },
     {
+      "src": "/(api|_next|static|public)/.*",
+      "continue": true
+    },
+    {
+      "src": "/(.+\\.[a-z]+)$",
+      "continue": true
+    },
+    {
       "src": "/(.*)",
       "status": 404,
       "dest": "/api/404.js",
-      "missing": [
-        {
-          "type": "extension",
-          "value": "\\.(js|css|html|jpg|jpeg|png|svg|gif|ico|json|webp|woff|woff2|ttf|eot|otf|mp4|webm|ogg|mp3|wav|pdf|xml|txt|md)$"
-        }
-      ]
+      "check": false
     },
     {
       "src": "/(.*)",
       "dest": "/index.html",
       "headers": {
         "X-Robots-Tag": "index, follow"
-      },
-      "missing": [
-        {
-          "type": "extension",
-          "value": "\\.(js|css|html|jpg|jpeg|png|svg|gif|ico|json|webp|woff|woff2|ttf|eot|otf|mp4|webm|ogg|mp3|wav|pdf|xml|txt|md)$"
-        }
-      ]
+      }
     }
   ]
 }
