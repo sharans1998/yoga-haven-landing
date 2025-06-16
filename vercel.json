@@ -1,66 +1,68 @@
 {
-  "rewrites": [
-    {
-      "source": "/teachers-training",
-      "destination": "/teachers-training.html"
-    },
-    {
-      "source": "/postpartum-fitness",
-      "destination": "/postpartum-fitness.html"
-    },
-    {
-      "source": "/postpartum",
-      "destination": "/postpartum-fitness.html"
-    },
-    {
-      "source": "/about",
-      "destination": "/about.html"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
-  ],
   "routes": [
-    { "handle": "filesystem" },
-    { "src": "/(.*)", "status": 404, "dest": "/api/404.js" }
-  ],
-  "headers": [
     {
-      "source": "/teachers-training.html",
-      "headers": [
-        {
-          "key": "Link",
-          "value": "</teachers-training>; rel=\"canonical\""
-        }
-      ]
+      "src": "/teachers-training",
+      "dest": "/teachers-training.html",
+      "headers": {
+        "X-Robots-Tag": "index, follow"
+      }
     },
     {
-      "source": "/postpartum-fitness.html",
-      "headers": [
-        {
-          "key": "Link",
-          "value": "</postpartum-fitness>; rel=\"canonical\""
-        }
-      ]
+      "src": "/postpartum-fitness",
+      "dest": "/postpartum-fitness.html",
+      "headers": {
+        "X-Robots-Tag": "index, follow"
+      }
     },
     {
-      "source": "/about.html",
-      "headers": [
-        {
-          "key": "Link",
-          "value": "</about>; rel=\"canonical\""
-        }
-      ]
+      "src": "/postpartum",
+      "dest": "/postpartum-fitness.html",
+      "headers": {
+        "X-Robots-Tag": "index, follow"
+      }
     },
     {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "index, follow"
-        }
-      ]
+      "src": "/about",
+      "dest": "/about.html",
+      "headers": {
+        "X-Robots-Tag": "index, follow"
+      }
+    },
+    {
+      "src": "/teachers-training.html",
+      "headers": {
+        "Link": "</teachers-training>; rel=\"canonical\"",
+        "X-Robots-Tag": "index, follow"
+      }
+    },
+    {
+      "src": "/postpartum-fitness.html",
+      "headers": {
+        "Link": "</postpartum-fitness>; rel=\"canonical\"",
+        "X-Robots-Tag": "index, follow"
+      }
+    },
+    {
+      "src": "/about.html",
+      "headers": {
+        "Link": "</about>; rel=\"canonical\"",
+        "X-Robots-Tag": "index, follow"
+      }
+    },
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/(.*)",
+      "status": 404,
+      "dest": "/api/404.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html",
+      "headers": {
+        "X-Robots-Tag": "index, follow"
+      }
     }
   ]
 }
