@@ -9,7 +9,9 @@ dotenv.config();
 export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
-    port: 8080
+    port: 8080,
+    // This ensures client-side routing works in development
+    historyApiFallback: true
   },
   plugins: [
     react(),

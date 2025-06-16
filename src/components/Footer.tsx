@@ -8,6 +8,7 @@ import {
   Phone,
   Youtube,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -54,20 +55,20 @@ const Footer = () => {
             </h4>
             <ul className="space-y-3">
               <li>
-                <a
-                  href="/"
+                <Link
+                  to="/"
                   className="text-yoga-charcoal/70 hover:text-yoga-deep-purple transition-colors"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/about"
+                <Link
+                  to="/about"
                   className="text-yoga-charcoal/70 hover:text-yoga-deep-purple transition-colors"
                 >
                   About
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -79,20 +80,20 @@ const Footer = () => {
             </h4>
             <ul className="space-y-3">
               <li>
-                <a
-                  href="/teachers-training"
+                <Link
+                  to="/teachers-training"
                   className="text-yoga-charcoal/70 hover:text-yoga-deep-purple transition-colors"
                 >
                   Teachers Training
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/postpartum"
+                <Link
+                  to="/postpartum"
                   className="text-yoga-charcoal/70 hover:text-yoga-deep-purple transition-colors"
                 >
                   Postpartum Fitness
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -141,18 +142,18 @@ const Footer = () => {
               &copy; {new Date().getFullYear()} Yonitara. All rights reserved.
             </p>
             <div className="flex gap-6 mt-4 md:mt-0">
-              <a
-                href="/privacy-policy"
+              <Link
+                to="/privacy-policy"
                 className="text-yoga-charcoal/60 text-sm hover:text-yoga-deep-purple transition-colors"
               >
                 Privacy Policy
-              </a>
-              <a
-                href="/terms-and-conditions"
+              </Link>
+              <Link
+                to="/terms-and-conditions"
                 className="text-yoga-charcoal/60 text-sm hover:text-yoga-deep-purple transition-colors"
               >
                 Terms of Service
-              </a>
+              </Link>
             </div>
           </div>
         </div>
