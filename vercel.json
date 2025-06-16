@@ -21,7 +21,38 @@
       "destination": "/index.html"
     }
   ],
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "status": 404, "dest": "/api/404.js" }
+  ],
   "headers": [
+    {
+      "source": "/teachers-training.html",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "</teachers-training>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/postpartum-fitness.html",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "</postpartum-fitness>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/about.html",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "</about>; rel=\"canonical\""
+        }
+      ]
+    },
     {
       "source": "/(.*)",
       "headers": [

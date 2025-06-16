@@ -22,6 +22,9 @@ export default function SEO({
     ? title
     : `${title} | Yonitara Birth`;
 
+  // Get the clean URL without .html extension
+  const cleanUrl = url ? url.replace(/\.html$/, "") : "https://yonitara.com";
+
   // Ensure meta tags are immediately available for crawlers
   useEffect(() => {
     // Update document title immediately for crawlers
@@ -67,12 +70,12 @@ export default function SEO({
       <meta name="robots" content="index, follow" />
       <meta name="language" content="English" />
 
-      {/* Canonical URL */}
-      <link rel="canonical" href={url} />
+      {/* Canonical URL - Always use clean URLs without .html extension */}
+      <link rel="canonical" href={cleanUrl} />
 
       {/* Open Graph / Facebook */}
       <meta property="og:type" content={type} />
-      <meta property="og:url" content={url} />
+      <meta property="og:url" content={cleanUrl} />
       <meta property="og:title" content={siteTitle} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={image} />
@@ -84,7 +87,7 @@ export default function SEO({
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:url" content={url} />
+      <meta name="twitter:url" content={cleanUrl} />
       <meta name="twitter:title" content={siteTitle} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
@@ -101,7 +104,7 @@ export default function SEO({
           "@type": "Organization",
           name: "Yonitara Birth",
           description: description,
-          url: url,
+          url: cleanUrl,
           logo: "https://res.cloudinary.com/dyb4kpthp/image/upload/v1745254602/logo_uxdzt4.svg",
           image: image,
           sameAs: [
