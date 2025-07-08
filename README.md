@@ -4,6 +4,20 @@
 
 **URL**: https://lovable.dev/projects/7795d0e6-9703-4d76-8548-911ac6b2fac2
 
+## Routing Configuration
+
+This project uses React Router for client-side routing. The following configurations are in place:
+
+- **Footer Links**: All internal navigation uses React Router's `<Link>` component to prevent full page reloads
+- **Vercel Configuration**: The `vercel.json` file contains routes to handle both SEO static pages for bots and SPA routing
+- **Development Server**: Vite is configured with `historyApiFallback: true` to support client-side routing in development
+- **Fallback**: A `_redirects` file is included in the public directory for hosting providers that support it
+
+If you experience routing issues:
+
+1. Make sure all internal links use `<Link to="/path">` instead of `<a href="/path">`
+2. Check that the server is properly configured to serve `index.html` for all routes
+
 ## How can I edit this code?
 
 There are several ways of editing your application.
