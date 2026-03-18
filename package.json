@@ -89,5 +89,11 @@
     "typescript-eslint": "^8.0.1",
     "vite": "^6.4.1",
     "vite-plugin-static-copy": "^3.1.2"
+  },
+  "overrides": {
+    "minimatch": ">=10.2.4",
+    "path-to-regexp": ">=6.3.0",
+    "undici": ">=6.24.0",
+    "ajv": ">=8.18.0"
   }
 }
