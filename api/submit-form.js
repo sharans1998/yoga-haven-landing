@@ -22,12 +22,21 @@ export default async function handler(req, res) {
             return res.status(400).json({ message: 'Invalid or missing submissions format' });
         }
 
-        // Validate Origin / Host header if present to mitigate CSRF/unauthorized cross-site calls
+        // Validate Origin / Referer header if present to mitigate CSRF/unauthorized cross-site calls
         const origin = req.headers.origin || req.headers.referer;
         if (origin) {
-            const isLocal = origin.includes('localhost') || origin.includes('127.0.0.1');
-            const isAllowedDomain = origin.includes('yonitara.com') || origin.includes('vercel.app');
-            if (!isLocal && !isAllowedDomain) {
+            try {
+                const { hostname } = new URL(origin);
+                const localHosts = new Set(['localhost', '127.0.0.1']);
+                const allowedBaseDomains = ['yonitara.com', 'vercel.app'];
+                const isLocal = localHosts.has(hostname);
+                const isAllowedDomain = allowedBaseDomains.some(
+                    (domain) => hostname === domain || hostname.endsWith(`.${domain}`)
+                );
+                if (!isLocal && !isAllowedDomain) {
+                    return res.status(403).json({ message: 'Forbidden: Invalid origin' });
+                }
+            } catch {
                 return res.status(403).json({ message: 'Forbidden: Invalid origin' });
             }
         }
